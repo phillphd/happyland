@@ -1,0 +1,44 @@
+title: Subscribe
+fields:
+  -
+    handle: subscribe_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Image
+  -
+    handle: subscribe_superheader
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Superheader
+  -
+    handle: subscribe_header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header
+  -
+    handle: subscribe_text
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Text
+  -
+    handle: signup_button_text
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: 'Signup Button Text'

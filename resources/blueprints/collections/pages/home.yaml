@@ -1,0 +1,74 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: hero
+        field:
+          type: section
+          listable: hidden
+          display: Hero
+      -
+        import: hero
+      -
+        handle: content
+        field:
+          type: section
+          listable: hidden
+          display: Content
+      -
+        handle: flexible_content
+        field:
+          sets:
+            cta_with_icon:
+              display: 'CTA with Icon'
+              fields:
+                -
+                  import: c_t_a_with_icon
+            feedback:
+              display: Feedback
+              fields:
+                -
+                  import: feedback
+            portfolio:
+              display: Portfolio
+              fields:
+                -
+                  import: portfolio
+            services:
+              display: Services
+              fields:
+                -
+                  import: services
+            subscribe:
+              display: Subscribe
+              fields:
+                -
+                  import: subscribe
+          type: replicator
+          listable: hidden
+          display: 'Flexible Content'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

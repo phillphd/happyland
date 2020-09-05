@@ -1,0 +1,61 @@
+title: Projects
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: overview
+        field:
+          type: textarea
+          listable: hidden
+          display: Overview
+      -
+        handle: images
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          type: assets
+          listable: hidden
+          display: Images
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          type: assets
+          listable: hidden
+          display: 'Featured Image'
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - projects
+          max_items: 1
+          listable: false
+          localizable: true

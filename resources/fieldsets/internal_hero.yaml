@@ -1,0 +1,22 @@
+title: 'Internal Hero'
+fields:
+  -
+    handle: superheader
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Superheader
+  -
+    handle: header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: text
+    field:
+      type: textarea
+      listable: hidden
+      display: Text

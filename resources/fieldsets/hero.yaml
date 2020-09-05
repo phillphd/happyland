@@ -1,0 +1,20 @@
+title: Hero
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Image
+  -
+    handle: header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header

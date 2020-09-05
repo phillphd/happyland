@@ -1,0 +1,31 @@
+title: 'CTA with Icon'
+fields:
+  -
+    handle: ctaicon_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Icon
+  -
+    handle: ctaicon_superheader
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Superheader
+  -
+    handle: ctaicon_header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header
+  -
+    import: button
+    prefix: ctaicon_

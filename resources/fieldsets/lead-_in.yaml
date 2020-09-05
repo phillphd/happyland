@@ -1,0 +1,23 @@
+title: Lead-In
+fields:
+  -
+    handle: leadin_text
+    field:
+      buttons:
+        - h2
+        - h3
+        - h4
+        - italic
+        - removeformat
+      save_html: true
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: false
+      allow_source: true
+      type: bard
+      localizable: false
+      listable: true
+      display: Text

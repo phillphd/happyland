@@ -1,0 +1,21 @@
+title: CTA
+fields:
+  -
+    handle: cta_superheader
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Superheader
+  -
+    handle: cta_header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header
+  -
+    import: button
+    prefix: cta_

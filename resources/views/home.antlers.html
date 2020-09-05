@@ -1,0 +1,27 @@
+{{ partial:hero }}
+
+{{ flexible_content }}
+
+  	{{ if type == "cta_with_icon" }}
+
+    	{{ partial:cta-with-icon }}
+
+  	{{ elseif type == "feedback" }}
+
+    	{{ partial:feedback }}
+
+  	{{ elseif type == "portfolio" }}
+
+    	{{ partial:portfolio }}
+
+  	{{ elseif type == "services" }}
+
+    	{{ partial:services }}
+
+    {{ elseif type == "subscribe" }}
+
+    	{{ partial:subscribe }}
+
+  	{{ /if }}
+
+{{ /flexible_content }}

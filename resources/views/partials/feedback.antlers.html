@@ -1,0 +1,30 @@
+<section class="feedback" style="background-image: url('/assets/swatch.png');">
+    <div class="feedback__header">
+    	<div class="feedback__icon">
+    		<img src="/assets/quote-1.png" />
+    	</div>
+    	<h2>
+    		{{ feedback_header }}
+    	</h2>
+    </div>
+    <div class="feedback__rows">
+    	<div class="feedback__rows--1">
+            {{ feedback }}
+                {{ if feedback|length | divide:2 | round == index }}
+                    </div><div class="feedback__rows--2">
+                {{ /if }}
+                {{ if type == "feedback" }}
+            		<div class="feedback-item">
+            			<img src="/assets/quote-2.png" />
+            			<div class="feedback-item__quote">
+                            {{ quote }}
+        				</div>
+        				<div class="feedback-item__author">
+        					{{ name }}
+        				</div>
+            		</div>
+                {{ /if }}
+            {{ /feedback }}
+    	</div>
+    </div>
+</section>

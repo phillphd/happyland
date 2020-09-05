@@ -1,0 +1,11 @@
+title: Blog
+template: blog/show
+layout: layout
+taxonomies:
+  - categories
+revisions: false
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

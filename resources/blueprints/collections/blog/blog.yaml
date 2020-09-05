@@ -1,0 +1,83 @@
+title: Blog
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: excerpt
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Excerpt
+      -
+        handle: bard
+        field:
+          buttons:
+            - h2
+            - h3
+            - h4
+            - h5
+            - bold
+            - italic
+            - underline
+            - strikethrough
+            - superscript
+            - subscript
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+            - code
+            - codeblock
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          type: bard
+          listable: hidden
+          display: Bard
+          container: assets
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+      -
+        handle: categories
+        field:
+          type: terms
+          taxonomies:
+            - categories
+          display: Categories
+          mode: select
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          type: assets
+          listable: hidden
+          display: 'Featured Image'

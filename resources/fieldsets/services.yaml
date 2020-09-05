@@ -1,0 +1,75 @@
+title: Services
+fields:
+  -
+    handle: services_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Icon
+  -
+    handle: services_header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header
+  -
+    handle: services_text
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Text
+  -
+    handle: services
+    field:
+      sets:
+        service:
+          display: Service
+          fields:
+            -
+              handle: image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Image
+            -
+              handle: superheader
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Superheader
+            -
+              handle: header
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Header
+            -
+              handle: text
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Text
+            -
+              import: button
+      type: replicator
+      localizable: false
+      listable: hidden
+      display: Services

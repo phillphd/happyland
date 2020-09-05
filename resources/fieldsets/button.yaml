@@ -1,0 +1,28 @@
+title: Button
+fields:
+  -
+    handle: button_url
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      width: 33
+      listable: hidden
+      display: 'Button URL'
+  -
+    handle: button_text
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      width: 33
+      listable: hidden
+      display: 'Button Text'
+  -
+    handle: open_in_new_window
+    field:
+      type: toggle
+      localizable: false
+      width: 33
+      listable: hidden
+      display: 'Open in New Window'

@@ -1,0 +1,68 @@
+title: Portfolio
+fields:
+  -
+    handle: portfolio_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      localizable: false
+      listable: hidden
+      display: Icon
+  -
+    handle: portfolio_header
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Header
+  -
+    handle: portfolio_subheader
+    field:
+      input_type: text
+      type: text
+      localizable: false
+      listable: hidden
+      display: Subheader
+  -
+    handle: projects
+    field:
+      sets:
+        project:
+          display: Project
+          fields:
+            -
+              handle: image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Image
+            -
+              handle: name
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Name
+            -
+              handle: url
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: URL
+      type: replicator
+      localizable: false
+      listable: hidden
+      display: Projects
+  -
+    import: button
+    prefix: portfolio_
