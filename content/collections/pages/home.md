@@ -2,12 +2,19 @@
 title: Home
 template: home
 updated_by: 98cdb1ff-7973-4461-bc30-7c66f95d0e17
-updated_at: 1598991924
+updated_at: 1610761451
 blueprint: home
 image:
   - home.jpg
 header: 'Helping small business owners create their dream brands.'
 flexible_content:
+  -
+    pullimage_header: 'You''ve tried to do it yourself but that''s only left you feeling overwhelmed and with a brand that feels homemade.'
+    pullimage_text: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30, I found myself asking "Is this really all there is?" So, in 2018, at 8 and a half months pregnant, I left my job as a Creative Director to become a mother and open the doors to my own studio – and I''ve never looked back.'
+    pullimage_image:
+      - image-about-2.jpg
+    type: pull_image
+    enabled: true
   -
     ctaicon_icon:
       - hands.png
@@ -17,6 +24,15 @@ flexible_content:
     ctaicon_button_text: 'Let''s do this!'
     ctaicon_open_in_new_window: false
     type: cta_with_icon
+    enabled: true
+  -
+    bio_superheader: 'Meet your Creative Director'
+    bio_header: 'Hi, I''m Brittany'
+    bio_text_1: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30, I found myself asking "Is this really all there is?" So, in 2018, at 8 and a half months pregnant, I left my job as a Creative Director to become a mother and open the doors to my own studio – and I''ve never looked back.'
+    bio_text_2: 'Now I spend my days reading Little Blue Truck to my son, eating peanut butter cups, thinking about Disneyland, and creating strategic brands that help small business owners make more money nd give them the confidence they need to take their business to the next level.'
+    bio_image:
+      - image-about-2.jpg
+    type: bio
     enabled: true
   -
     subscribe_image:
@@ -142,5 +158,14 @@ flexible_content:
     portfolio_open_in_new_window: false
     type: portfolio
     enabled: true
+superheader: 'Homemade cupcakes are good. Homemade brands are not.'
+button_url: '#!'
+button_text: 'Let''s do this'
+open_in_new_window: false
+show_announcement: true
+announcement_header: 'Discover your brand''s secret personality.'
+announcement_text: 'I spent the last half of my 20''s working my way up through the ranks at an agency.'
+announcement_button_url: '#!'
+announcement_button_text: 'Take the quiz'
 id: af813f70-4d2e-4f3d-9c4e-89a97a4ee1f3
 ---

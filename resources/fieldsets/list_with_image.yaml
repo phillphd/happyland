@@ -1,0 +1,24 @@
+title: 'List with Image'
+fields:
+  -
+    handle: listimage_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Image
+  -
+    handle: listimage_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: listimage_list
+    field:
+      type: list
+      listable: hidden
+      display: List

@@ -1,0 +1,24 @@
+title: 'Pull Image'
+fields:
+  -
+    handle: pullimage_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: pullimage_text
+    field:
+      type: textarea
+      listable: hidden
+      display: Textarea
+  -
+    handle: pullimage_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Image

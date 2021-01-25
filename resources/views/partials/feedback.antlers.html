@@ -1,30 +1,32 @@
-<section class="feedback" style="background-image: url('/assets/swatch.png');">
-    <div class="feedback__header">
-    	<div class="feedback__icon">
+<section class="py-16 md:py-24 px-4 overflow-hidden bg-cover bg-center" style="background-image: url('/assets/gradient.jpg');">
+    <div class="text-center">
+
+    	<div class="relative w-8 md:w-12 mx-auto mb-4">
     		<img src="/assets/quote-1.png" />
     	</div>
-    	<h2>
+    	<h2 class="mb-8 font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal">
     		{{ feedback_header }}
     	</h2>
+
     </div>
-    <div class="feedback__rows">
-    	<div class="feedback__rows--1">
-            {{ feedback }}
-                {{ if feedback|length | divide:2 | round == index }}
-                    </div><div class="feedback__rows--2">
-                {{ /if }}
-                {{ if type == "feedback" }}
-            		<div class="feedback-item">
-            			<img src="/assets/quote-2.png" />
-            			<div class="feedback-item__quote">
-                            {{ quote }}
-        				</div>
-        				<div class="feedback-item__author">
-        					{{ name }}
-        				</div>
-            		</div>
-                {{ /if }}
-            {{ /feedback }}
-    	</div>
+    <div class="flex flex-row flex-nowrap justify-center items-end">
+
+    	{{ feedback }}
+            {{ if type == "feedback" }}
+                <div class="relative w-72 py-6 px-5 my-8 mx-3 md:mx-6 text-center bg-tan flex-grow-0 flex-shrink-0">
+                    <img class="absolute top-0 left-1/2 w-8 transform -translate-x-1/2 -translate-y-1/2" src="/assets/quote-2.png" />
+                    
+                    <div class="mb-6 font-sans-alt text-sm text-charcoal">
+                        {{ quote }}
+                    </div>
+                    <div class="text-xs text-charcoal uppercase">
+                        {{ name }}
+                    </div>
+
+                    <div class="absolute bottom-0 transform translate-y-full" style="right: 30px; border-top: 32px solid #EEE4D0; border-left: 32px solid transparent;"></div>
+                </div>
+            {{ /if }}
+        {{ /feedback }}
+
     </div>
 </section>

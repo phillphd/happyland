@@ -1,0 +1,43 @@
+title: Bio
+fields:
+  -
+    handle: bio_superheader
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Superheader
+  -
+    handle: bio_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: bio_text_1
+    field:
+      type: textarea
+      listable: hidden
+      display: 'Text 1'
+  -
+    handle: bio_text_2
+    field:
+      type: textarea
+      listable: hidden
+      display: 'Text 2'
+  -
+    handle: bio_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Image
+  -
+    handle: dark_mode
+    field:
+      type: toggle
+      listable: hidden
+      display: 'Dark Mode'

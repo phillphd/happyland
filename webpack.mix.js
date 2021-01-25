@@ -13,8 +13,9 @@ require('laravel-mix-purgecss');
 
 mix.js('resources/js/site.js', 'public/js')
 
-mix.sass('resources/sass/app.scss', 'public/css', [
+mix.postCss('resources/css/tailwind.css', 'public/css', [
     require('postcss-import'),
+    require('tailwindcss'),
     require('postcss-nested'),
     require('postcss-preset-env')({stage: 0})
 ])

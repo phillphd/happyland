@@ -2,9 +2,13 @@
 
 {{ flexible_content }}
 
-  	{{ if type == "cta_with_icon" }}
+  	{{ if type == "bio" }}
 
-    	{{ partial:cta-with-icon }}
+    	{{ partial:bio }}
+
+    {{ elseif type == "cta_with_icon" }}
+
+        {{ partial:cta-with-icon }}
 
   	{{ elseif type == "feedback" }}
 
@@ -13,6 +17,10 @@
   	{{ elseif type == "portfolio" }}
 
     	{{ partial:portfolio }}
+
+    {{ elseif type == "pull_image" }}
+
+        {{ partial:pull-image }}
 
   	{{ elseif type == "services" }}
 

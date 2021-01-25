@@ -1,1 +1,5 @@
 /* This is all you. */
+
+html {
+	-webkit-font-smoothing: antialiased;
+}

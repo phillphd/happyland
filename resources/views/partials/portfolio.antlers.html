@@ -1,24 +1,24 @@
-<section class="portfolio">
-    <div class="container">
-        <div class="portfolio__icon">
+<section class="py-16 md:py-20">
+    <div class="container px-4">
+        <div class="w-20 md:w-28 mx-auto mb-8">
             {{ assets:portfolio_icon }}
                 <img src="{{ url }}" />
             {{ /assets:portfolio_icon }}
         </div>
 
-        <h2 class="portfolio__header">
+        <h2 class="mb-4 font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal text-center">
             {{ portfolio_header }}
         </h2>
 
-        <p class="portfolio__subheader">
+        <p class="mb-8 font-sans-alt text-sm sm:text-base text-charcoal text-center">
             {{ portfolio_subheader }}
         </p>
 
-        <div class="portfolio__items">
+        <div class="flex flex-row flex-wrap">
             {{ projects }}
                 {{ if type == "project" }}
-                    <div class="portfolio-item" {{ assets:image }}style="background-image: url('{{ url }}')"{{ /assets:image }}>
-                        <div class="portfolio-item__name">
+                    <div class="relative w-1/2 h-48 sm:h-60 md:h-80 bg-cover bg-center" {{ assets:image }}style="background-image: url('{{ url }}')"{{ /assets:image }}>
+                        <div class="absolute hidden">
                             <a href="{{ url }}">
                                 {{ name }}
                             </a>
@@ -28,9 +28,10 @@
             {{ /projects }}
         </div>
 
-        <div>
-            <a class="portfolio__button" href="{{ portfolio_button_url }}">
+        <div class="mt-8 text-center">
+            <a class="relative pr-4 text-sm sm:text-base text-primary hover:pr-6" href="{{ portfolio_button_url }}">
                 {{ portfolio_button_text }}
+                <span class="absolute top-1/2 right-0 w-2 h-2 border-r border-b border-primary transform -rotate-45 -translate-y-1/2"></span>
             </a>
         </div>
     </div>

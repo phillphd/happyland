@@ -1,0 +1,25 @@
+title: 'Logo Block'
+fields:
+  -
+    handle: logoblock_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: logoblock_text
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Text
+  -
+    handle: logoblock_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: 'Background Image'

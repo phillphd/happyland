@@ -1,0 +1,29 @@
+<section class="overflow-x-hidden py-16 md:py-24 bg-charcoal-bg">
+    <div class="container px-4">
+
+        <div class="lg:flex flex-row">
+            <div class="lg:w-1/2 lg:py-8 lg:pr-20">
+
+                {{ assets:pullimage_image }}
+                    <div class="lg:hidden relative h-0 pb-16/9 mb-8 bg-cover bg-center bg-gray" style="background-image: url('{{ url }}')"></div>
+                {{ /assets:pullimage_image }}
+
+                <h2 class="max-w-xl mb-8 font-serif text-2xl sm:text-3xl text-tan">
+                    {{ pullimage_header }}
+                </h2>
+
+                <p class="max-w-xl font-sans-alt text-tan">
+                    {{ pullimage_text }}
+                </p>
+
+            </div>
+
+            {{ assets:pullimage_image }}
+                <div class="hidden lg:block lg:w-1/2">
+                    <div class="relative h-full bg-cover bg-center bg-gray" style="background-image: url('{{ url }}')"></div>
+                </div>
+            {{ /assets:pullimage_image }}
+        </div>
+
+    </div>
+</section>

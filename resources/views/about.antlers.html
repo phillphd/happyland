@@ -1,7 +1,47 @@
 {{ partial:hero-about }}
 
-{{ partial:lead-in }}
+{{ flexible_content }}
 
-{{ partial:origin-story }}
+  	{{ if type == "bio" }}
 
-{{ partial:cta }}
+    	{{ partial:bio }}
+
+    {{ elseif type == "cta_with_icon" }}
+
+      	{{ partial:cta-with-icon }}
+
+  	{{ elseif type == "feedback" }}
+
+    	{{ partial:feedback }}
+
+    {{ elseif type == "lead-in" }}
+
+    	{{ partial:lead-in }}
+
+    {{ elseif type == "list_with_image" }}
+
+    	{{ partial:list_with_image }}
+
+    {{ elseif type == "logo_block" }}
+
+    	{{ partial:logo_block }}
+
+  	{{ elseif type == "portfolio" }}
+
+    	{{ partial:portfolio }}
+
+    {{ elseif type == "pull_image" }}
+
+        {{ partial:pull-image }}
+
+  	{{ elseif type == "services" }}
+
+    	{{ partial:services }}
+
+    {{ elseif type == "subscribe" }}
+
+    	{{ partial:subscribe }}
+
+  	{{ /if }}
+
+{{ /flexible_content }}

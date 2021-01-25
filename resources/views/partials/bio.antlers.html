@@ -1,0 +1,41 @@
+<section class="overflow-x-hidden py-16 md:py-24 {{ if dark_mode }}bg-charcoal-bg{{ else }}bg-tan-bg{{ /if }}">
+    <div class="container px-4">
+
+        <div class="lg:flex flex-row">
+            <div class="lg:w-1/2 lg:py-8 lg:pr-20">
+                <div class="inline-block p-2 mb-10 text-xs sm:text-sm lg:text-base text-pink border-b {{ if dark_mode }}border-tan{{ else }}border-charcoal{{ /if }}">
+                    <img class="inline w-16" src="/assets/banner-1.png" />
+
+                    {{ bio_superheader }}
+                </div>
+
+                <h2 class="mb-4 font-serif text-2xl sm:text-3xl {{ if dark_mode }}text-tan{{ else }}text-primary{{ /if }}">
+                    {{ bio_header }}
+                </h2>
+
+                <p class="mb-8 font-sans-alt {{ if dark_mode }}text-tan{{ else }}text-charcoal{{ /if }}">
+                    {{ bio_text_1 }}
+                </p>
+
+                {{ assets:bio_image }}
+                    <div class="lg:hidden relative h-0 pb-4/3 mb-8 bg-cover bg-center bg-gray" style="background-image: url('{{ url }}')">
+                        <div class="absolute top-0 right-0 w-20 h-32 bg-contain transform translate-x-1/2 -translate-y-1/2" style=" background-image: url('/assets/sparkle.png')"></div>
+                    </div>
+                {{ /assets:bio_image }}
+
+                <p class="mb-8 font-sans-alt {{ if dark_mode }}text-tan{{ else }}text-charcoal{{ /if }}">
+                    {{ bio_text_2 }}
+                </p>
+            </div>
+
+            {{ assets:bio_image }}
+                <div class="hidden lg:block lg:w-1/2">
+                    <div class="relative h-full bg-cover bg-center bg-gray" style="background-image: url('{{ url }}')">
+                        <div class="absolute top-0 right-0 w-20 h-32 bg-contain transform translate-x-1/2 -translate-y-1/2" style="background-image: url('/assets/sparkle.png')"></div>
+                    </div>
+                </div>
+            {{ /assets:bio_image }}
+        </div>
+
+    </div>
+</section>

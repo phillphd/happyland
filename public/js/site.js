@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./resources/css/tailwind.css":
+/*!************************************!*\
+  !*** ./resources/css/tailwind.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/site.js":
 /*!******************************!*\
   !*** ./resources/js/site.js ***!
@@ -97,26 +108,15 @@
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!**************************************************************!*\
-  !*** multi ./resources/js/site.js ./resources/sass/app.scss ***!
-  \**************************************************************/
+/*!*****************************************************************!*\
+  !*** multi ./resources/js/site.js ./resources/css/tailwind.css ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/js/site.js */"./resources/js/site.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/css/tailwind.css */"./resources/css/tailwind.css");
 
 
 /***/ })

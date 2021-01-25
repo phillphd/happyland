@@ -26,16 +26,16 @@ sections:
         handle: flexible_content
         field:
           sets:
-            cta_with_icon:
-              display: 'CTA with Icon'
+            bio:
+              display: Bio
               fields:
                 -
-                  import: c_t_a_with_icon
-            feedback:
-              display: Feedback
+                  import: bio
+            subscribe:
+              display: Subscribe
               fields:
                 -
-                  import: feedback
+                  import: subscribe
             portfolio:
               display: Portfolio
               fields:
@@ -46,11 +46,21 @@ sections:
               fields:
                 -
                   import: services
-            subscribe:
-              display: Subscribe
+            feedback:
+              display: Feedback
               fields:
                 -
-                  import: subscribe
+                  import: feedback
+            cta_with_icon:
+              display: 'CTA with Icon'
+              fields:
+                -
+                  import: c_t_a_with_icon
+            pull_image:
+              display: 'Pull Image'
+              fields:
+                -
+                  import: pull_image
           type: replicator
           listable: hidden
           display: 'Flexible Content'

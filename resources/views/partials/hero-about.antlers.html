@@ -1,25 +1,19 @@
-<section class="hero-about">
-	<div class="hero-about__image" {{ assets:hero_image }}style="background-image: url('{{ url }}')"{{ /assets:hero_image }}>
-		<div class="hero-about__image-alt" style="background-image: url('/assets/img-about.png')"></div>
-	</div>
+<section class="relative pt-36 pb-24">
 
-    <div class="container">
+	<div class="absolute top-0 right-0 w-2/3 h-full" {{ assets:image }}style="background-image: url('{{ url }}')"{{ /assets:image }}></div>
+
+    <div class="relative container px-4">
     	<div class="hero-about__content">
-	        <h1 class="hero-about__header">
-	        	<div class="sparkle hero-about__sparkle">
-	    			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.27 106.3"><defs><style>.sparkle-1{fill:#f8aea3;}.sparkle-2{fill:#8fc8d1;}.sparkle-3{fill:#e76035;}.sparkle-4{fill:none;stroke:#fff;stroke-miterlimit:10;}.sparkle-5{fill:#fff;}</style></defs><title>sparkle</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><path class="sparkle-1" d="M42.25,17.28c-2.19-2.09-2.43-6.51-2.43-15.4H38.76c0,8.89-.24,13.31-2.43,15.4S29.54,19.4,21.24,19.4v1.05c8.3,0,12.87,0,15.09,2.13s2.43,6.51,2.43,15.4h1.06c0-8.89.24-13.31,2.43-15.4s6.8-2.13,15.09-2.13V19.4c-8.29,0-12.87,0-15.09-2.12"/><path class="sparkle-2" d="M16.24,80.58c-1.31-1.25-1.45-3.89-1.45-9.2h-.63c0,5.31-.14,8-1.45,9.2s-4.06,1.26-9,1.26v.64c5,0,7.69,0,9,1.26s1.45,3.89,1.45,9.2h.63c0-5.31.14-8,1.45-9.2s4.06-1.26,9-1.26v-.64c-4.95,0-7.68,0-9-1.26"/><path class="sparkle-3" d="M65.61,59c-1.31-1.25-1.45-3.89-1.45-9.2h-.64c0,5.31-.14,8-1.45,9.2s-4.06,1.26-9,1.26v.64c4.95,0,7.68,0,9,1.26s1.45,3.89,1.45,9.2h.64c0-5.31.14-7.95,1.45-9.2s4-1.26,9-1.26v-.64c-5,0-7.69,0-9-1.26"/><circle class="sparkle-4" cx="79.83" cy="33.91" r="0.94"/><circle class="sparkle-5" cx="0.94" cy="61.54" r="0.94"/><circle class="sparkle-5" cx="26.19" cy="37.98" r="0.94"/><circle class="sparkle-5" cx="21.24" cy="105.36" r="0.94"/><circle class="sparkle-4" cx="32.56" cy="92.94" r="0.94"/><circle class="sparkle-4" cx="13.53" cy="26" r="0.94"/><circle class="sparkle-5" cx="57.34" cy="0.94" r="0.94"/><circle class="sparkle-5" cx="78.89" cy="74.04" r="0.94"/></g></g></svg>
-	    		</div>
-	    		
-	            {{ hero_header }}
+
+	        <h1 class="max-w-xl mb-4 font-serif text-3xl lg:text-4xl text-charcoal">
+	            {{ header }}
 	        </h1>
 
-	        <div class="hero-about__text">
-		        <div class="squiggle hero-about__squiggle">
-				    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.15 14.98"><defs><style>.squiggle-2{fill:#D85A37;}</style></defs><title>squiggle-red</title><g data-name="Layer 2"><g data-name="Layer 2"><path class="squiggle-2" d="M133.13,15c-6,0-9.17-2.75-11.71-5-2.21-1.93-3.81-3.32-7.31-3.32S109,8.09,106.8,10c-2.54,2.21-5.7,5-11.71,5s-9.17-2.75-11.71-5C81.17,8.09,79.57,6.7,76.07,6.7S71,8.09,68.76,10c-2.54,2.21-5.7,5-11.71,5s-9.17-2.75-11.71-5C43.13,8.09,41.53,6.7,38,6.7S32.93,8.09,30.72,10C28.18,12.23,25,15,19,15S9.85,12.23,7.31,10C5.1,8.09,3.5,6.7,0,6.7V0C6,0,9.17,2.75,11.71,5,13.92,6.88,15.52,8.27,19,8.27S24.11,6.88,26.32,5C28.86,2.75,32,0,38,0S47.2,2.75,49.74,5C52,6.88,53.55,8.27,57.05,8.27S62.15,6.88,64.36,5c2.54-2.21,5.7-5,11.71-5s9.17,2.75,11.71,5C90,6.88,91.59,8.27,95.09,8.27s5.1-1.39,7.31-3.31c2.54-2.21,5.7-5,11.71-5s9.17,2.75,11.71,5c2.21,1.92,3.81,3.31,7.31,3.31s5.1-1.39,7.31-3.31c2.54-2.21,5.7-5,11.71-5V6.7c-3.5,0-5.1,1.39-7.31,3.32C142.3,12.23,139.14,15,133.13,15Z"/></g></g></svg>
-				</div>
+	        <p class="max-w-xl font-sans-alt">
+	        	{{ text }}
+		    </p>
 
-	        	{{ hero_text }}
-		    </div>
 	    </div>
     </div>
+
 </section>

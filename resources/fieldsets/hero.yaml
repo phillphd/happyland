@@ -7,14 +7,65 @@ fields:
       restrict: false
       allow_uploads: true
       type: assets
-      localizable: false
       listable: hidden
       display: Image
+  -
+    handle: superheader
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Superheader
   -
     handle: header
     field:
       input_type: text
       type: text
-      localizable: false
       listable: hidden
       display: Header
+  -
+    import: button
+  -
+    handle: show_announcement
+    field:
+      type: toggle
+      listable: hidden
+      display: 'Show Announcement'
+  -
+    handle: announcement_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: 'Announcement Header'
+      if:
+        show_announcement: 'equals true'
+  -
+    handle: announcement_text
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: 'Announcement Text'
+      if:
+        show_announcement: 'equals true'
+  -
+    handle: announcement_button_url
+    field:
+      input_type: text
+      type: text
+      width: 50
+      listable: hidden
+      display: 'Announcement Button URL'
+      if:
+        show_announcement: 'equals true'
+  -
+    handle: announcement_button_text
+    field:
+      input_type: text
+      type: text
+      width: 50
+      listable: hidden
+      display: 'Announcement Button Text'
+      if:
+        show_announcement: 'equals true'

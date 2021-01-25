@@ -4,109 +4,64 @@ sections:
     display: Main
     fields:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-      -
         handle: hero
         field:
           type: section
           listable: hidden
           display: Hero
       -
-        handle: hero_image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          type: assets
-          listable: hidden
-          display: Image
+        import: hero-_about
       -
-        handle: hero_header
-        field:
-          input_type: text
-          type: text
-          listable: hidden
-          display: Header
-      -
-        handle: hero_text
-        field:
-          save_html: true
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: false
-          allow_source: false
-          type: bard
-          listable: hidden
-          display: Text
-      -
-        handle: leadin
+        handle: content
         field:
           type: section
           listable: hidden
-          display: Lead-In
+          display: Content
       -
-        import: lead-_in
-      -
-        handle: origin_story
+        handle: flexible_content
         field:
-          type: section
+          sets:
+            bio:
+              display: Bio
+              fields:
+                -
+                  import: bio
+            cta_with_icon:
+              display: 'CTA with Icon'
+              fields:
+                -
+                  import: c_t_a_with_icon
+            lead-in:
+              display: Lead-In
+              fields:
+                -
+                  import: lead-in
+            list_with_image:
+              display: 'List with Image'
+              fields:
+                -
+                  import: list_with_image
+            logo_block:
+              display: 'Logo Block'
+              fields:
+                -
+                  import: logo_block
+            feedback:
+              display: Feedback
+              fields:
+                -
+                  import: feedback
+          type: replicator
           listable: hidden
-          display: 'Origin Story'
-      -
-        handle: origin_icon
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          type: assets
-          listable: hidden
-          display: Icon
-      -
-        handle: origin_superheader
-        field:
-          input_type: text
-          type: text
-          listable: hidden
-          display: Superheader
-      -
-        handle: origin_header
-        field:
-          input_type: text
-          type: text
-          listable: hidden
-          display: Header
-      -
-        handle: origin_text
-        field:
-          type: textarea
-          listable: hidden
-          display: Text
-      -
-        handle: origin_image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          type: assets
-          listable: hidden
-          display: Image
-      -
-        handle: cta
-        field:
-          type: section
-          listable: hidden
-          display: CTA
-      -
-        import: c_t_a
+          display: 'Flexible Content'
   sidebar:
     display: Sidebar
     fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
       -
         handle: slug
         field:

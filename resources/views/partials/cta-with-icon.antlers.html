@@ -1,20 +1,20 @@
-<section class="cta">
-    <div class="container">
-        <div class="cta__icon">
+<section class="py-16 md:py-24 text-center bg-pink-light-bg">
+    <div class="container px-4">
+        <div class="relative w-40 sm:w-52 lg:w-60 mx-auto mb-10">
             {{ assets:ctaicon_icon }}
             <img src="{{ url }}" />
             {{ /assets:ctaicon_icon }}
         </div>
 
-        <h6 class="cta__superheader">
+        <h6 class="max-w-5xl mx-auto mb-4 text-xs sm:text-sm lg:text-base text-charcoal">
             {{ ctaicon_superheader }}
         </h6>
 
-        <h2 class="cta__header">
+        <h2 class="max-w-5xl mx-auto mb-12 font-serif text-2xl sm:text-3xl lg:text-4xl text-primary">
             {{ ctaicon_header }}
         </h2>
 
-        <a class="cta__button" href="{{ ctaicon_button_url }}">
+        <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 mb-8 md:mb-12 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ ctaicon_button_url }}">
             {{ ctaicon_button_text }}
         </a>
     </div>

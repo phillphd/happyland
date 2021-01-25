@@ -1,0 +1,27 @@
+title: Lead-in
+fields:
+  -
+    handle: leadin_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Icon
+  -
+    handle: leadin_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: leadin_text
+    field:
+      type: textarea
+      listable: hidden
+      display: Text
+  -
+    import: button
+    prefix: leadin_

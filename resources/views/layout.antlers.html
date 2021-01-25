@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Another awesome Statamic site">
     <title>{{ title ?? site:name }}</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ theme:css }}">
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}" rel="preload" as="style" onload="this.rel='stylesheet'">
 
-    <link rel="stylesheet" href="https://use.typekit.net/omx8een.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eid4jyy.css">
     <script src="https://kit.fontawesome.com/551ea5e9e1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-tan-bg">
 
     {{ partial:nav }}
 
@@ -22,7 +21,6 @@
     {{ partial:footer }}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="{{ mix src='/js/site.js' }}"></script>
 
 </body>

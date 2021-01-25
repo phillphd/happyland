@@ -1,4 +1,5 @@
 name: 'Brittany Wong'
 super: true
 id: 98cdb1ff-7973-4461-bc30-7c66f95d0e17
-password_hash: $2y$10$v4u1kk8Auf6A78qNEPt8TOhfP4s6hr0wqYWgIhkK289Rh0.IL7W.W
+password_hash: $2y$10$S3T1SU2vRKheSUQvviO./ecZDmPVM45TtRFwFAd8aH7Iv7ZZubVc6
+# password_hash: $2y$10$v4u1kk8Auf6A78qNEPt8TOhfP4s6hr0wqYWgIhkK289Rh0.IL7W.W
