@@ -1,6 +1,15 @@
 title: 'Pull Image'
 fields:
   -
+    handle: pullimage_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Icon
+  -
     handle: pullimage_header
     field:
       input_type: text
@@ -10,9 +19,25 @@ fields:
   -
     handle: pullimage_text
     field:
-      type: textarea
+      always_show_set_button: false
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - anchor
+        - underline
+        - strikethrough
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      type: bard
       listable: hidden
-      display: Textarea
+      display: Text
   -
     handle: pullimage_image
     field:
@@ -22,3 +47,26 @@ fields:
       type: assets
       listable: hidden
       display: Image
+      width: 75
+  -
+    handle: pullimage_pull_direction
+    field:
+      options:
+        left: 'Left Align Image'
+        right: 'Right Align Image'
+      clearable: false
+      multiple: false
+      searchable: false
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      type: select
+      width: 25
+      listable: hidden
+      display: 'Pull Direction'
+  -
+    handle: pullimage_dark_mode
+    field:
+      type: toggle
+      listable: hidden
+      display: 'Dark Mode'

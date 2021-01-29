@@ -1,20 +1,28 @@
-<section class="overflow-x-hidden py-16 md:py-24 bg-charcoal-bg">
+<section class="overflow-x-hidden py-16 md:py-24 {{ if pullimage_dark_mode }}bg-charcoal-bg{{ else }}bg-tan-bg{{ /if }}">
     <div class="container px-4">
 
-        <div class="lg:flex flex-row">
-            <div class="lg:w-1/2 lg:py-8 lg:pr-20">
+        <div class="lg:flex {{ if pullimage_pull_direction == 'left' }}flex-row-reverse{{ else }}flex-row{{ /if }}">
+            <div class="lg:w-1/2 lg:py-8 {{ if pullimage_pull_direction == 'left' }}lg:pl-20{{ else }}lg:pr-20{{ /if }}">
 
                 {{ assets:pullimage_image }}
                     <div class="lg:hidden relative h-0 pb-16/9 mb-8 bg-cover bg-center bg-gray" style="background-image: url('{{ url }}')"></div>
                 {{ /assets:pullimage_image }}
 
-                <h2 class="max-w-xl mb-8 font-serif text-2xl sm:text-3xl text-tan">
+                {{ if pullimage_icon }}
+                    <div class="h-20 mb-8 bg-contain bg-bottom bg-no-repeat"
+                        {{ assets:pullimage_icon }}
+                            style="background-image: url('{{ url }}')"
+                        {{ /assets:pullimage_icon }}
+                    ></div>
+                {{ /if }}
+
+                <h2 class="max-w-xl mx-auto lg:mx-0 mb-8 font-serif text-2xl sm:text-3xl {{ if pullimage_dark_mode }}text-tan{{ else }}text-charcoal{{ /if }}">
                     {{ pullimage_header }}
                 </h2>
 
-                <p class="max-w-xl font-sans-alt text-tan">
+                <div class="wysiwyg max-w-xl mx-auto lg:mx-0 {{ if pullimage_dark_mode }}text-tan{{ else }}text-charcoal{{ /if }}">
                     {{ pullimage_text }}
-                </p>
+                </div>
 
             </div>
 

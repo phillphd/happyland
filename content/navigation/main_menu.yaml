@@ -1,0 +1,15 @@
+title: 'Main Menu'
+collections:
+  - pages
+max_depth: 1
+root: true
+tree:
+  -
+    entry: af813f70-4d2e-4f3d-9c4e-89a97a4ee1f3
+  -
+    entry: 134d8332-a9c5-4028-85fc-cb2ccddc14ff
+  -
+    entry: 6afd9efa-c333-49a3-9ee0-0d2c0e3e4ec4
+  -
+    title: ChurchLink
+    url: 'https://churchlink.page/'

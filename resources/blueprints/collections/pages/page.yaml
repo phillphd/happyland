@@ -1,4 +1,4 @@
-title: About
+title: Page
 sections:
   main:
     display: Main
@@ -10,7 +10,7 @@ sections:
           listable: hidden
           display: Hero
       -
-        import: hero-_about
+        import: internal_hero
       -
         handle: content
         field:
@@ -26,6 +26,11 @@ sections:
               fields:
                 -
                   import: bio
+            beliefs:
+              display: Beliefs
+              fields:
+                -
+                  import: beliefs
             cta_with_icon:
               display: 'CTA with Icon'
               fields:
@@ -51,6 +56,21 @@ sections:
               fields:
                 -
                   import: feedback
+            process:
+              display: Process
+              fields:
+                -
+                  import: process
+            contact:
+              display: Contact
+              fields:
+                -
+                  import: contact
+            pull_image:
+              display: 'Pull Image'
+              fields:
+                -
+                  import: pull_image
           type: replicator
           listable: hidden
           display: 'Flexible Content'

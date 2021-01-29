@@ -1,0 +1,44 @@
+title: Beliefs
+fields:
+  -
+    handle: beliefs_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: beliefs
+    field:
+      sets:
+        belief:
+          display: Belief
+          fields:
+            -
+              handle: image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                listable: hidden
+                display: Image
+            -
+              handle: header
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Header
+            -
+              handle: text
+              field:
+                type: textarea
+                listable: hidden
+                display: Text
+      type: replicator
+      listable: hidden
+      display: Beliefs
+  -
+    import: button
+    prefix: beliefs_

@@ -15,17 +15,25 @@
         </p>
 
         <div class="flex flex-row flex-wrap">
-            {{ projects }}
-                {{ if type == "project" }}
-                    <div class="relative w-1/2 h-48 sm:h-60 md:h-80 bg-cover bg-center" {{ assets:image }}style="background-image: url('{{ url }}')"{{ /assets:image }}>
-                        <div class="absolute hidden">
-                            <a href="{{ url }}">
-                                {{ name }}
-                            </a>
+
+            {{ collection from="projects" }}
+                <div class="w-1/2 h-48 sm:h-60 md:h-80 bg-cover bg-center"
+                    {{ assets:featured_image }}
+                        style="background-image: url('{{ url }}')"
+                    {{ /assets:featured_image }}
+                >
+
+                    <a href="{{ url }}">
+                        <div class="relative w-full h-full bg-charcoal bg-opacity-50 opacity-0 hover:opacity-100 transition">
+                            <div class="absolute top-1/2 left-1/2 w-full px-4 font-serif text-lg sm:text-xl md:text-2xl text-center text-tan transform -translate-x-1/2 -translate-y-1/2">
+                                {{ title }}
+                            </div>
                         </div>
-                    </div>
-                {{ /if }}
-            {{ /projects }}
+                    </a>
+
+                </div>
+            {{ /collection }}
+
         </div>
 
         <div class="mt-8 text-center">

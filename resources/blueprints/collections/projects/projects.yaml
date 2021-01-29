@@ -15,13 +15,71 @@ sections:
           listable: hidden
           display: Overview
       -
+        handle: services
+        field:
+          type: list
+          listable: hidden
+          display: Services
+          width: 50
+      -
+        handle: descriptors
+        field:
+          type: list
+          listable: hidden
+          display: Descriptors
+          width: 50
+      -
         handle: images
         field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          type: assets
+          sets:
+            one_column_fixed_height:
+              display: 'One Column / Fixed Height'
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    type: assets
+                    listable: hidden
+                    display: Image
+            one_column_variable_height:
+              display: 'One Column / Variable Height'
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    type: assets
+                    listable: hidden
+                    display: Image
+            two_column_fixed_height:
+              display: 'Two Column / Fixed Height'
+              fields:
+                -
+                  handle: image_1
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    type: assets
+                    width: 50
+                    listable: hidden
+                    display: 'Image 1'
+                -
+                  handle: image_2
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    type: assets
+                    width: 50
+                    listable: hidden
+                    display: 'Image 2'
+          type: replicator
           listable: hidden
           display: Images
   sidebar:
@@ -33,14 +91,6 @@ sections:
           type: slug
           required: true
           localizable: true
-      -
-        handle: tags
-        field:
-          type: terms
-          taxonomies:
-            - tags
-          display: Tags
-          mode: select
       -
         handle: featured_image
         field:
@@ -59,3 +109,11 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select

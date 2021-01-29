@@ -1,1 +1,60 @@
-{{ content }}
+{{ partial:internal_hero }}
+
+
+{{ flexible_content }}
+
+  	{{ if type == "bio" }}
+
+    	{{ partial:bio }}
+
+    {{ elseif type == "beliefs" }}
+
+      	{{ partial:beliefs }}
+
+    {{ elseif type == "contact" }}
+
+      	{{ partial:contact }}
+
+    {{ elseif type == "cta_with_icon" }}
+
+      	{{ partial:cta-with-icon }}
+
+  	{{ elseif type == "feedback" }}
+
+    	{{ partial:feedback }}
+
+    {{ elseif type == "lead-in" }}
+
+    	{{ partial:lead-in }}
+
+    {{ elseif type == "list_with_image" }}
+
+    	{{ partial:list_with_image }}
+
+    {{ elseif type == "logo_block" }}
+
+    	{{ partial:logo_block }}
+
+  	{{ elseif type == "portfolio" }}
+
+    	{{ partial:portfolio }}
+
+    {{ elseif type == "process" }}
+
+    	{{ partial:process }}
+
+    {{ elseif type == "pull_image" }}
+
+        {{ partial:pull-image }}
+
+  	{{ elseif type == "services" }}
+
+    	{{ partial:services }}
+
+    {{ elseif type == "subscribe" }}
+
+    	{{ partial:subscribe }}
+
+  	{{ /if }}
+
+{{ /flexible_content }}

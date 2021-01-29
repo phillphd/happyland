@@ -1,0 +1,38 @@
+<section class="py-16 md:py-24">
+    <div class="container px-4">
+
+        <h2 class="mt-4 mb-8 font-serif text-2xl sm:text-3xl lg:text-4xl text-center text-charcoal">
+            {{ beliefs_header }}
+        </h2>
+
+        <div class="max-w-7xl mx-auto mb-12 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            
+            {{ beliefs }}
+                {{ if type == "belief" }}
+                    <div class="relative">
+                        <div class="h-32 md:h-40 lg:h-48 bg-contain bg-center" {{ assets:image }}style="background-image: url('{{ url }}')"{{ /assets:image }}></div>
+                        
+                        <div class="py-4 md:py-6 lg:py-8 text-center">
+
+                            <h3 class="inline-block px-3 py-1 mb-4 text-xs sm:text-sm lg:text-base text-tan-bg uppercase bg-pink">
+                                {{ header }}
+                            </h3>
+                            <p class="mb-6 font-sans-alt text-sm lg:text-base text-charcoal">
+                                {{ text }}
+                            </p>
+
+                        </div>
+                    </div>
+                {{ /if }}
+            {{ /beliefs }}
+            
+        </div>
+
+        <div class="text-center">
+            <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ beliefs_button_url }}">
+                {{ beliefs_button_text }}
+            </a>
+        </div>
+
+    </div>
+</section>

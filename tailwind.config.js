@@ -37,7 +37,7 @@ module.exports = {
 	    }],
 
 		'base': ['1rem', {
-			lineHeight: '1.5rem',
+			lineHeight: '1.75rem',
 		}],
 
 		'lg': ['1.125rem', {
@@ -73,7 +73,17 @@ module.exports = {
 			'1/2': '50%',
 		},
 
+		width: {
+       		'screen-80': '80vw',
+      	},
+
 		height: {
+			'88': '22rem',
+	        '104': '26rem',
+	        '140': '35rem',
+	        '176': '44rem',
+	        '192': '48rem',
+			'screen-60': '60vh',
        		'screen-80': '80vh',
       	},
 

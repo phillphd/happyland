@@ -1,44 +1,110 @@
 ---
+header: 'Helping small business owners create their dream brands.'
 title: About
-template: about
-cta_open_in_new_window: false
 updated_by: 98cdb1ff-7973-4461-bc30-7c66f95d0e17
-updated_at: 1610766017
-blueprint: about
-origin_superheader: 'Happyland’s Origin Story'
-origin_header: 'I get my best ideas in New York.'
-cta_superheader: 'Let me put my experience to work for you and create a brand you’re confident in.'
-cta_header: 'Are you ready to stop wasting time and money and get the brand of your dreams?'
-cta_button_url: '#!'
-cta_button_text: 'Yes! Let''s get this started!'
-origin_text: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis purus eget aliquet sagittis. Etiam sodales ex ligula, non euismod ligula luctus et. Praesent eu ullamcorper lorem. In tempus cursus libero rutrum vestibulum. Mauris vel orci vitae odio volutpat bibendum. Praesent eget arcu sit amet turpis ullamcorper posuere. Nunc finibus fermentum magna id faucibus.
-  
-  Nunc vel ipsum dolor. Duis sit amet erat vitae justo fringilla sodales vel quis libero. Phasellus condimentum lobortis libero. Pellentesque quis viverra dolor. Morbi bibendum justo vitae orci ultrices rutrum.
-  
-hero_header: 'Hi, I’m Brittany.'
-hero_text: '<p>With over a decade of design experience and deep rooted love of really good branding, I help overwhelmed business owners take their brand to the next level so they can stop trying to do it all and focus on what they do best.</p><p>And I want to help you.</p>'
-leadin_text: '<h2>I spend my days reading Little Blue Truck to <em>my son</em>, eating <em>peanut butter cups</em>, thinking about <em>Disneyland</em>, and <em>creating dream brands</em> for small business owners.</h2>'
-hero_image:
-  - img-about-bg.jpg
-origin_icon:
-  - banner-2@3x.png
-origin_image:
-  - image-about-2.jpg
-header: 'Don''t let your DIY brand hold you back.'
-text: 'You''ve worked hard to get where you are. You''ve poured every ounce of yourself into your business to get it to where it is today. And you''ve done an amazing job! But it''s time for an upgrade... and can you really trust your sister''s friend''s cousin to create your dream for free? You need to build your business on a strong brand that will last you decades but you don''t know how or where to start.'
+updated_at: 1611782975
+blueprint: page
 image:
-  - gradient.jpg
+  - image-about-2.jpg
 flexible_content:
   -
-    leadin_icon:
-      - hands.png
-    leadin_header: 'Happyland can help.'
-    leadin_text: 'We create meaningful, intentional brands that not only look good but are deeply rooted in strategy making them completely irresistible to customers so you can make more money and finally start making progress towards your business goals (which means you can get back to the life you dreamed of when you first started your business!).'
-    leadin_button_url: '#!'
-    leadin_button_text: 'Let''s get started'
-    leadin_open_in_new_window: false
-    type: lead-in
+    process_header: 'The magic behind our process'
+    process:
+      -
+        icon:
+          - banner-1.png
+        header: Discovery
+        text: 'With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words.'
+        type: process
+        enabled: true
+      -
+        icon:
+          - lightbulb@3x.png
+        header: Strategy
+        text: 'With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words.'
+        type: process
+        enabled: true
+      -
+        icon:
+          - blueprint@3x.png
+        header: Design
+        text: 'With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words.'
+        type: process
+        enabled: true
+      -
+        icon:
+          - frame.png
+        header: Discovery
+        text: 'With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words.'
+        type: process
+        enabled: true
+    process_button_url: '#!'
+    process_button_text: 'I''m in! Let''s get started!'
+    process_open_in_new_window: false
+    type: process
     enabled: true
-id: 3f11e783-c5b7-43d0-8509-6825eee1cab2
+  -
+    contact_header: 'Ready to take your brand to the next level?'
+    steps:
+      -
+        header: 'Step 1'
+        text: 'Use the form below to tell us about your business and branding needs.'
+        type: step
+        enabled: true
+        icon:
+          - frame.png
+      -
+        header: 'Step 2'
+        text: 'Use the form below to tell us about your business and branding needs.'
+        type: step
+        enabled: true
+        icon:
+          - art@3x.png
+      -
+        header: 'Step 3'
+        text: 'Use the form below to tell us about your business and branding needs.'
+        type: step
+        enabled: true
+        icon:
+          - hands.png
+    contact_note: '*With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words. With just 20 carefully crafted questions, we''ll take the vision you have for your brand and put it into words.'
+    type: contact
+    enabled: true
+  -
+    pullimage_icon:
+      - art@3x.png
+    pullimage_header: 'More than "just a logo."'
+    pullimage_text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30, I found myself asking "Is this really all there is?" So, in 2018, at 8 and a half months pregnant, I left my job as a Creative Director to become a mother and open the doors to my own studio – and I''ve never looked back.'
+    pullimage_image:
+      - screen-shot-2020-07-29-at-8.40.01-pm.png
+    pullimage_pull_direction: left
+    pullimage_dark_mode: false
+    type: pull_image
+    enabled: true
+    pullimage_texttext:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'I spent the last half of my 20''s working my way up through the ranks at an agency. But when I reached my (very safe) career goals before the age of 30, I found myself asking "Is this really all there is?" So, in 2018, at 8 and a half months pregnant, I left my job as a Creative Director to become a mother and open the doors to my own studio – and I''ve never looked back.'
+id: 134d8332-a9c5-4028-85fc-cb2ccddc14ff
 ---

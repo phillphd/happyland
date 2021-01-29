@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/css/tailwind.css":
-/*!************************************!*\
-  !*** ./resources/css/tailwind.css ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/js/site.js":
 /*!******************************!*\
   !*** ./resources/js/site.js ***!
@@ -104,19 +93,51 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// This is all you.
+// (function($){
+//     $(window).on('load', function(){
+//         $.instagramFeed({
+//             'username': 'happylandcreative',
+//             'container': "#instagram-feed3",
+//             'display_profile': true,
+//             'display_biography': true,
+//             'display_gallery': true,
+//             'display_captions': false,
+//             'display_igtv': true,
+//             'callback': null,
+//             'styling': false,
+//             'items': 12,
+//             'cache_time': 240
+//         });
+//     });
+// })(jQuery);
+$(document).ready(function () {
+  $("#hamburger").click(function () {
+    $("body").toggleClass('open-nav');
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./resources/js/site.js ./resources/css/tailwind.css ***!
-  \*****************************************************************/
+/*!**************************************************************!*\
+  !*** multi ./resources/js/site.js ./resources/sass/app.scss ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/js/site.js */"./resources/js/site.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/css/tailwind.css */"./resources/css/tailwind.css");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/happylandd/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

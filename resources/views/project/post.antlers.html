@@ -1,0 +1,99 @@
+<section class="h-0 lg:h-screen-60 pb-16/9 lg:pb-0 bg-cover bg-center"
+	{{ assets:featured_image }}
+		style="background-image: url('{{ url }}')"
+	{{ /assets:featured_image }}
+>
+</section>
+
+<section class="py-24 md:py-28 lg:py-32">
+    <div class="container px-4">
+    	
+    	<h1 class="max-w-3xl mb-16 font-serif text-3xl lg:text-4xl text-charcoal">
+	        {{ title }}
+	    </h1>
+
+	    <div class="flex flex-row flex-wrap">
+	    	<div class="w-full md:w-3/4 lg:w-4/5 pr-10 mb-8 md:md-0">
+
+		        <h6 class="mb-4 text-xs sm:text-sm lg:text-base text-charcoal">
+					Overview
+				</h6>
+
+				<p class="max-w-3xl font-sans-alt text-charcoal">
+					{{ overview }}
+				</p>
+
+			</div>
+
+			<div class="w-full md:w-1/4 lg:w-1/5 mb-8 md:md-0">
+
+				<h6 class="mb-4 text-xs sm:text-sm lg:text-base text-charcoal">
+					Services
+				</h6>
+				<ul class="pl-5 list-disc">
+					{{ services }}
+						<li class="mb-2 font-sans-alt text-charcoal">
+							{{ value }}
+						</li>
+					{{ /services }}
+				</ul>
+
+			</div>
+		</div>
+
+    </div>
+</section>
+
+<section class="py-6 bg-charcoal overflow-hidden">
+
+	<ul class="pl-5 mx-auto text-center whitespace-nowrap">
+		{{ descriptors }}
+			<li class="inline mx-8 md:mx-12 lg:mx-20 text-xs sm:text-sm lg:text-base text-tan">
+				{{ value }}
+			</li>
+		{{ /descriptors }}
+	</ul>
+
+</section>
+
+<section class="pt-24 md:pt-28 lg:pt-32 pb-32 md:pb-40 lg:pb-52">
+    <div class="container px-4">
+            
+        {{ images }}
+
+            {{ if type == "one_column_fixed_height" }}
+                <div class="w-full h-52 mb-8 bg-cover bg-center"
+                	{{ assets:image }}
+                		style="background-image: url('{{ url }}')"
+                	{{ /assets:image }}
+                ></div>
+            {{ /if }}
+
+            {{ if type == "one_column_variable_height" }}
+            	<img class="w-full" 
+            		{{ assets:image }}
+            			src="{{ url }}"
+            		{{ /assets:image }}
+            	>
+            {{ /if }}
+
+            {{ if type == "two_column_fixed_height" }}
+            	<div class="grid grid-cols-2 gap-8">
+                	<div class="w-full h-52 mb-8 bg-cover bg-center"
+                		{{ assets:image_1 }}
+                			style="background-image: url('{{ url }}')"
+                		{{ /assets:image_1 }}
+                	></div>
+
+                	<div class="w-full h-52 mb-8 bg-cover bg-center"
+                		{{ assets:image_2 }}
+                			style="background-image: url('{{ url }}')"
+                		{{ /assets:image_2 }}
+                	></div>
+                </div>
+            {{ /if }}
+
+        {{ /images }}
+
+    </div>
+</section>

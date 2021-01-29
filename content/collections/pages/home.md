@@ -2,7 +2,7 @@
 title: Home
 template: home
 updated_by: 98cdb1ff-7973-4461-bc30-7c66f95d0e17
-updated_at: 1610761451
+updated_at: 1611777762
 blueprint: home
 image:
   - home.jpg
@@ -15,6 +15,9 @@ flexible_content:
       - image-about-2.jpg
     type: pull_image
     enabled: true
+    pullimage_icon: {  }
+    pullimage_pull_direction: right
+    pullimage_dark_mode: true
   -
     ctaicon_icon:
       - hands.png
@@ -34,6 +37,7 @@ flexible_content:
       - image-about-2.jpg
     type: bio
     enabled: true
+    dark_mode: false
   -
     subscribe_image:
       - screen-shot-2020-07-29-at-8.40.01-pm.png

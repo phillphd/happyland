@@ -1,12 +1,5 @@
-title: 'Internal Hero'
+title: 'Hero - Internal'
 fields:
-  -
-    handle: superheader
-    field:
-      input_type: text
-      type: text
-      listable: hidden
-      display: Superheader
   -
     handle: header
     field:
@@ -20,3 +13,12 @@ fields:
       type: textarea
       listable: hidden
       display: Text
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: Image

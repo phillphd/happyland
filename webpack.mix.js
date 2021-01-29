@@ -1,5 +1,5 @@
-const mix = require('laravel-mix');
-require('laravel-mix-purgecss');
+// const mix = require('laravel-mix');
+// require('laravel-mix-purgecss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,34 +11,25 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.js('resources/js/site.js', 'public/js')
+// mix.js('resources/js/jquery.instagramFeed.min.js', 'public/js')
 
-mix.postCss('resources/css/tailwind.css', 'public/css', [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('postcss-nested'),
-    require('postcss-preset-env')({stage: 0})
-])
+// mix.js('resources/js/site.js', 'public/js')
 
-if (mix.inProduction()) {
-   mix.version();
-   mix.purgeCss({ enabled: true });
-}
-
-/*
- |--------------------------------------------------------------------------
- | Statamic Control Panel
- |--------------------------------------------------------------------------
- |
- | Feel free to add your own JS or CSS to the Statamic Control Panel.
- | https://statamic.dev/extending/control-panel#adding-css-and-js-assets
- |
- */
-
-// mix.js('resources/js/cp.js', 'public/vendor/app/js')
-//    .postCss('resources/css/cp.css', 'public/vendor/app/css', [
+// mix.postCss('resources/sass/app.scss', 'public/css', [
 //     require('postcss-import'),
 //     require('tailwindcss'),
 //     require('postcss-nested'),
 //     require('postcss-preset-env')({stage: 0})
 // ])
+
+
+
+let mix = require('laravel-mix');
+let tailwindcss = require('tailwindcss');
+
+mix.js('resources/js/site.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css')
+   .options({
+        processCssUrls: false,
+        postCss: [tailwindcss('tailwind.config.js')]
+    });

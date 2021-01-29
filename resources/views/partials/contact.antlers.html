@@ -1,0 +1,48 @@
+<section class="py-16 md:py-20">
+    <div class="container px-4">
+
+        <h2 class="mt-4 mb-16 font-serif text-2xl sm:text-3xl lg:text-4xl text-center text-charcoal">
+            {{ contact_header }}
+        </h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            
+            {{ steps }}
+                {{ if type == "step" }}
+                    <div class="relative">
+                        <div class="h-32 bg-contain bg-bottom bg-no-repeat"
+                            {{ assets:icon }}
+                                style="background-image: url('{{ url }}')"
+                            {{ /assets:icon }}
+                        ></div>
+                        
+                        <div class="py-4 md:py-6 lg:py-8 text-center">
+
+                            <h3 class="mb-4 text-xs sm:text-sm lg:text-base uppercase">
+                                {{ header }}
+                            </h3>
+                            <p class="max-w-md mx-auto mb-6 font-sans-alt text-sm lg:text-base text-charcoal">
+                                {{ text }}
+                            </p>
+
+                        </div>
+                    </div>
+                {{ /if }}
+            {{ /steps }}
+            
+        </div>
+
+        <div>
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
+            <iframe src="https://hello.dubsado.com:443/public/form/view/5fb1ebbb95d76b52421aff6f" frameborder="0" style="width:1px; min-width:100%;"></iframe>
+            <script type="text/javascript">setTimeout(function(){iFrameResize({checkOrigin: false, heightCalculationMethod: "taggedElement"});}, 30)</script>
+
+        </div>
+
+        <p class="max-w-5xl mx-auto font-sans-alt text-sm text-charcoal">
+            {{ contact_note }}
+        </p>
+
+    </div>
+</section>

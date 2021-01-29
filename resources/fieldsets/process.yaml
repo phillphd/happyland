@@ -1,0 +1,44 @@
+title: Process
+fields:
+  -
+    handle: process_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: process
+    field:
+      sets:
+        process:
+          display: Process
+          fields:
+            -
+              handle: icon
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                listable: hidden
+                display: Icon
+            -
+              handle: header
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Header
+            -
+              handle: text
+              field:
+                type: textarea
+                listable: hidden
+                display: Text
+      type: replicator
+      listable: hidden
+      display: Process
+  -
+    import: button
+    prefix: process_

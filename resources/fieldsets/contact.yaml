@@ -1,0 +1,49 @@
+title: Contact
+fields:
+  -
+    handle: contact_header
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Header
+  -
+    handle: steps
+    field:
+      sets:
+        step:
+          display: Step
+          fields:
+            -
+              handle: icon
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                listable: hidden
+                display: Icon
+            -
+              handle: header
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Header
+            -
+              handle: text
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Text
+      type: replicator
+      listable: hidden
+      display: Steps
+  -
+    handle: contact_note
+    field:
+      type: textarea
+      instructions: 'Appears below Dubsado form'
+      listable: hidden
+      display: Note

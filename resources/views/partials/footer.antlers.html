@@ -10,6 +10,8 @@
 			</h6>
 		</div>
 
+		<!-- <div id="instagram-feed3"></div> -->
+
 		<div class="flex flex-row w-full h-24 sm:h-32 md:h-48 mb-6">
 			<div class="w-full h-full bg-gray-light"></div>
 			<div class="w-full h-full bg-gray"></div>
@@ -54,24 +56,11 @@
 
 		<div class="py-14 border-b border-tan">
 			<ul class="text-center">
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">About</a>
-				</li>
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">Portfolio</a>
-				</li>
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">Services</a>
-				</li>
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">Blog</a>
-				</li>
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">Contact</a>
-				</li>
-				<li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
-					<a href="#!">Privacy Policy</a>
-				</li>
+				{{ nav:footer_menu include_home="true" scope="tag" }}
+                    <li class="inline-block mx-2 text-xs sm:text-sm md:text-base text-tan hover:text-pink-light uppercase transition">
+						<a href="{{ url }}">{{ tag:nav_title or title }}</a>
+					</li>
+                {{ /nav:footer_menu }}
 			</ul>
 		</div>
 

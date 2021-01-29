@@ -1,0 +1,38 @@
+<section class="py-16 md:py-24 bg-red-bg bg-opacity-80">
+    <div class="container px-4">
+        
+        <h2 class="mb-20 font-serif text-2xl sm:text-3xl lg:text-4xl text-center text-charcoal">
+            {{ process_header }}
+        </h2>
+
+        <div class="mb-20 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+                
+            {{ process }}
+                {{ if type == "process" }}
+                    <div class="relative pl-24 lg:pl-28 md:pr-16 lg:pr-20 xl:pr-28">
+                        <div class="absolute top-0 left-0 w-20 h-20 bg-contain bg-center bg-no-repeat"
+                            {{ assets:icon }}
+                                style="background-image: url('{{ url }}')"
+                            {{ /assets:icon }}
+                        ></div>
+
+                        <h3 class="mb-3 font-serif text-xl md:text-2xl lg:text-3xl text-charcoal">
+                            {{ header }}
+                        </h3>
+                        <p class="mb-6 font-sans-alt text-sm lg:text-base text-charcoal">
+                            {{ text }}
+                        </p>
+                    </div>
+                {{ /if }}
+            {{ /process }}
+
+        </div>
+
+        <div class="text-center">
+            <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red hover:bg-white rounded transition" href="{{ process_button_url }}">
+               {{ process_button_text }}
+            </a>
+        </div>
+
+    </div>
+</section>

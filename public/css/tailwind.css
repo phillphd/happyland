@@ -5346,6 +5346,10 @@ html {
   height: 100vh;
 }
 
+.h-screen-60 {
+  height: 60vh;
+}
+
 .h-screen-80 {
   height: 80vh;
 }
@@ -5362,7 +5366,7 @@ html {
 
 .text-base {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 .text-lg {
@@ -16251,6 +16255,10 @@ html {
   width: max-content;
 }
 
+.w-screen-80 {
+  width: 80vw;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -25261,6 +25269,10 @@ html {
     height: 100vh;
   }
 
+  .sm\:h-screen-60 {
+    height: 60vh;
+  }
+
   .sm\:h-screen-80 {
     height: 80vh;
   }
@@ -25277,7 +25289,7 @@ html {
 
   .sm\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-lg {
@@ -36153,6 +36165,10 @@ html {
     width: max-content;
   }
 
+  .sm\:w-screen-80 {
+    width: 80vw;
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -45098,6 +45114,10 @@ html {
     height: 100vh;
   }
 
+  .md\:h-screen-60 {
+    height: 60vh;
+  }
+
   .md\:h-screen-80 {
     height: 80vh;
   }
@@ -45114,7 +45134,7 @@ html {
 
   .md\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-lg {
@@ -55990,6 +56010,10 @@ html {
     width: max-content;
   }
 
+  .md\:w-screen-80 {
+    width: 80vw;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -64935,6 +64959,10 @@ html {
     height: 100vh;
   }
 
+  .lg\:h-screen-60 {
+    height: 60vh;
+  }
+
   .lg\:h-screen-80 {
     height: 80vh;
   }
@@ -64951,7 +64979,7 @@ html {
 
   .lg\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-lg {
@@ -75827,6 +75855,10 @@ html {
     width: max-content;
   }
 
+  .lg\:w-screen-80 {
+    width: 80vw;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -84772,6 +84804,10 @@ html {
     height: 100vh;
   }
 
+  .xl\:h-screen-60 {
+    height: 60vh;
+  }
+
   .xl\:h-screen-80 {
     height: 80vh;
   }
@@ -84788,7 +84824,7 @@ html {
 
   .xl\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .xl\:text-lg {
@@ -95664,6 +95700,10 @@ html {
     width: max-content;
   }
 
+  .xl\:w-screen-80 {
+    width: 80vw;
+  }
+
   .xl\:z-0 {
     z-index: 0;
   }
@@ -104609,6 +104649,10 @@ html {
     height: 100vh;
   }
 
+  .\32xl\:h-screen-60 {
+    height: 60vh;
+  }
+
   .\32xl\:h-screen-80 {
     height: 80vh;
   }
@@ -104625,7 +104669,7 @@ html {
 
   .\32xl\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-lg {
@@ -115501,6 +115545,10 @@ html {
     width: max-content;
   }
 
+  .\32xl\:w-screen-80 {
+    width: 80vw;
+  }
+
   .\32xl\:z-0 {
     z-index: 0;
   }
@@ -124446,6 +124494,10 @@ html {
     height: 100vh;
   }
 
+  .xxl\:h-screen-60 {
+    height: 60vh;
+  }
+
   .xxl\:h-screen-80 {
     height: 80vh;
   }
@@ -124462,7 +124514,7 @@ html {
 
   .xxl\:text-base {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .xxl\:text-lg {
@@ -135336,6 +135388,10 @@ html {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .xxl\:w-screen-80 {
+    width: 80vw;
   }
 
   .xxl\:z-0 {
