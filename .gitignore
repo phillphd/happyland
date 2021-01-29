@@ -11,6 +11,7 @@
 /storage/glide/*
 /vendor
 /users
+/content
 .env
 .env.backup
 .phpunit.result.cache
