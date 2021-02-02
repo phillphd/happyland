@@ -22,4 +22,25 @@ $(document).ready(function() {
     	$("body").toggleClass('open-nav');
     });
 
+	var theWindow = $(window);
+
+	theWindow.on("scroll", function() {
+		var stop = theWindow.scrollTop();
+		var shrinkHeight = 0;
+
+		if($("#announcement").length) {
+			shrinkHeight = $("#announcement").height();
+		}
+
+		if (stop > 100) {
+			$("#main-nav").addClass("bg-tan-bg");
+			$("#logo").addClass("scale-75");
+			$("#main-nav").css({'transform' : 'translateY(-' + shrinkHeight + 'px)'});
+		} else {
+			$("#main-nav").removeClass("bg-tan-bg");
+			$("#logo").removeClass("scale-75");
+			$("#main-nav").css({'transform' : 'translateY(0)'});
+		}
+	});
+
 });

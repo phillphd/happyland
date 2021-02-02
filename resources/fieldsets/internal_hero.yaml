@@ -1,6 +1,13 @@
 title: 'Hero - Internal'
 fields:
   -
+    handle: superheader
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Superheader
+  -
     handle: header
     field:
       input_type: text

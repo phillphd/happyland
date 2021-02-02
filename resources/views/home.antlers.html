@@ -2,34 +2,62 @@
 
 {{ flexible_content }}
 
-  	{{ if type == "bio" }}
+    {{ if type == "bio" }}
 
-    	{{ partial:bio }}
+      {{ partial:bio }}
+
+    {{ elseif type == "beliefs" }}
+
+        {{ partial:beliefs }}
+
+    {{ elseif type == "contact" }}
+
+        {{ partial:contact }}
 
     {{ elseif type == "cta_with_icon" }}
 
         {{ partial:cta-with-icon }}
 
-  	{{ elseif type == "feedback" }}
+    {{ elseif type == "feedback" }}
 
-    	{{ partial:feedback }}
+      {{ partial:feedback }}
 
-  	{{ elseif type == "portfolio" }}
+    {{ elseif type == "lead-in" }}
 
-    	{{ partial:portfolio }}
+      {{ partial:lead-in }}
+
+    {{ elseif type == "list_with_image" }}
+
+      {{ partial:list_with_image }}
+
+    {{ elseif type == "logo_block" }}
+
+      {{ partial:logo_block }}
+
+    {{ elseif type == "portfolio" }}
+
+      {{ partial:portfolio }}
+
+    {{ elseif type == "process" }}
+
+      {{ partial:process }}
 
     {{ elseif type == "pull_image" }}
 
         {{ partial:pull-image }}
 
-  	{{ elseif type == "services" }}
+    {{ elseif type == "services" }}
 
-    	{{ partial:services }}
+      {{ partial:services }}
+
+    {{ elseif type == "text" }}
+
+      {{ partial:text }}
 
     {{ elseif type == "subscribe" }}
 
-    	{{ partial:subscribe }}
+      {{ partial:subscribe }}
 
-  	{{ /if }}
+    {{ /if }}
 
 {{ /flexible_content }}

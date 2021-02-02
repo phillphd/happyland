@@ -16,6 +16,12 @@
                     {{ logoblock_text }}
                 </p>
 
+                {{ if logoblock_button_text }}
+                    <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 mt-6 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ logoblock__button_url }}">
+                        {{ logoblock_button_text }}
+                    </a>
+                {{ /if }}
+
             </div>
 
         </div>

@@ -1,9 +1,22 @@
-<div class="p-4">
-    <div class="container">
+<div id="main-nav" class="fixed top-0 left-0 z-50 w-full transition">
+
+    {{ if options:announcement_text }}
+
+    <div id="announcement" class="overflow-hidden bg-cover bg-center transform transition" style="background-image: url('/assets/gradient.jpg');">
+        <div class="px-4 py-2 text-xs text-center text-white">
+            <a href="{{ options:announcement_url }}">
+                {{ options:announcement_text }}
+            </a>
+        </div>
+    </div>
+
+    {{ /if }}
+
+    <div class="container px-4 py-2">
         <nav class="relative">
 
             <a class="inline-block" href="/">
-                <img class="w-32 sm:w-40 md:w-52 lg:w-60" src="/assets/logo.svg" alt="{{ site_name }}">
+                <img id="logo" class="h-11 lg:h-16 transform transition" src="/assets/logo.svg" alt="{{ site_name }}">
             </a>
 
             <a id="hamburger" href="#!">
@@ -14,9 +27,9 @@
                 </div>
             </a>
 
-            <ul class="absolute top-1/2 right-0 hidden lg:block transform -translate-y-1/2">
+            <ul class="absolute top-1/2 right-0 hidden lg:block transform scale-100 -translate-y-1/2">
                 {{ nav:main_menu include_home="true" scope="tag" }}
-                    <li class="inline-block ml-8 text-sm lg:text-base text-charcoal hover:text-primary uppercase transition">
+                    <li class="inline-block ml-8 text-sm text-charcoal hover:text-primary uppercase transition">
                         <a class="transition {{ if last }}px-4 py-2 text-charcoal border border-pink rounded-sm hover:text-white hover:bg-pink{{ /if }}" href="{{ url }}">
                             {{ tag:nav_title or title }}
                         </a>
@@ -27,7 +40,7 @@
             <div id="mobile-nav" class="fixed top-0 right-0 z-40 block lg:hidden w-screen-80 h-screen px-12 pt-32 pb-8 bg-charcoal transform translate-x-full transition duration-700 overflow-y-scroll">
                 <ul id="mobile-nav" class="">
                     {{ nav:main_menu include_home="true" scope="tag" }}
-                        <li class="py-4 mb-2 font-serif text-lg text-tan uppercase border-b border-pink-bg transition">
+                        <li class="py-4 mb-2 font-serif text-tan uppercase border-b border-pink-bg transition">
                             <a class="transition" href="{{ url }}">
                                 {{ tag:nav_title or title }}
                             </a>

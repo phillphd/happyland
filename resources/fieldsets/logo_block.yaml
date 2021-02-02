@@ -1,6 +1,15 @@
 title: 'Logo Block'
 fields:
   -
+    handle: logoblock_image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      type: assets
+      listable: hidden
+      display: 'Background Image'
+  -
     handle: logoblock_header
     field:
       input_type: text
@@ -15,11 +24,5 @@ fields:
       listable: hidden
       display: Text
   -
-    handle: logoblock_image
-    field:
-      mode: grid
-      restrict: false
-      allow_uploads: true
-      type: assets
-      listable: hidden
-      display: 'Background Image'
+    import: button
+    prefix: logoblock_

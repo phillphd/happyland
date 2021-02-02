@@ -51,6 +51,10 @@
 
     	{{ partial:services }}
 
+    {{ elseif type == "text" }}
+
+      {{ partial:text }}
+
     {{ elseif type == "subscribe" }}
 
     	{{ partial:subscribe }}

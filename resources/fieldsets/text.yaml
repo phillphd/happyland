@@ -1,0 +1,41 @@
+title: Text
+fields:
+  -
+    handle: bard
+    field:
+      always_show_set_button: false
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              import: button
+      buttons:
+        - h2
+        - h3
+        - h4
+        - h5
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - superscript
+        - subscript
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      type: bard
+      listable: hidden
+      display: Bard

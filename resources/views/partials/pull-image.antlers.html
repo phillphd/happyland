@@ -24,6 +24,14 @@
                     {{ pullimage_text }}
                 </div>
 
+                {{ if pullimage_button_text }}
+                    <div class="max-w-xl mx-auto lg:mx-0">
+                        <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 mt-6 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ pullimage_button_url }}">
+                            {{ pullimage_button_text }}
+                        </a>
+                    </div>
+                {{ /if }}
+
             </div>
 
             {{ assets:pullimage_image }}

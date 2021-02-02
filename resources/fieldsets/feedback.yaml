@@ -5,9 +5,15 @@ fields:
     field:
       input_type: text
       type: text
-      localizable: false
       listable: hidden
       display: Header
+  -
+    handle: feedback_text
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: Text
   -
     handle: feedback
     field:
@@ -34,6 +40,5 @@ fields:
                 listable: hidden
                 display: Name
       type: replicator
-      localizable: false
       listable: hidden
       display: Feedback

@@ -4,17 +4,23 @@
     	<div class="relative w-8 md:w-12 mx-auto mb-4">
     		<img src="/assets/quote-1.png" />
     	</div>
-    	<h2 class="mb-8 font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal">
+    	<h2 class="mb-4 font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal">
     		{{ feedback_header }}
     	</h2>
 
+        {{ if feedback_text }}
+            <p class="mb-4 font-sans-alt text-sm sm:text-base text-charcoal text-center">
+                {{ feedback_text }}
+            </p>
+        {{ /if }}
+
     </div>
-    <div class="flex flex-row flex-nowrap justify-center items-end">
+    <div class="flex flex-row flex-nowrap justify-center items-end mt-4">
 
     	{{ feedback }}
             {{ if type == "feedback" }}
                 <div class="relative w-72 py-6 px-5 my-8 mx-3 md:mx-6 text-center bg-tan flex-grow-0 flex-shrink-0">
-                    <img class="absolute top-0 left-1/2 w-8 transform -translate-x-1/2 -translate-y-1/2" src="/assets/quote-2.png" />
+                    <img class="absolute top-0 left-1/2 w-8 transform -translate-x-1/2 -translate-y-1/2" src="/assets/quote-2.svg" />
                     
                     <div class="mb-6 font-sans-alt text-sm text-charcoal">
                         {{ quote }}

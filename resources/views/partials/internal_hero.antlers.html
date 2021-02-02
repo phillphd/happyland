@@ -1,4 +1,4 @@
-<section class="relative pt-36 pb-24">
+<section class="relative {{ if image }}pt-60 pb-24{{ else }}pt-44 pb-16{{ /if }}">
 
 	<div class="absolute top-0 right-0 w-2/3 h-full bg-cover bg-center"
 		{{ assets:image }}
@@ -7,15 +7,23 @@
 	></div>
 
     <div class="relative container px-4">
-    	<div class="hero-about__content">
+    	<div class="{{ if image }}inline-block max-w-2xl px-12 py-8 bg-pink-bg{{ else }}max-w-5xl mx-auto text-center{{ /if }}">
 
-	        <h1 class="max-w-xl mb-4 font-serif text-3xl lg:text-4xl text-charcoal">
+    		{{ if superheader }}
+	    		<h6 class="inline-block text-xs sm:text-sm lg:text-base text-white uppercase bg-pink-bg {{ if image }}mb-4{{ else }}px-4 py-2 mb-8{{ /if }}">
+	    			{{ superheader }}
+	    		</h6>
+	    	{{ /if }}
+
+	        <h1 class="font-serif text-3xl lg:text-4xl text-charcoal">
 	            {{ header }}
 	        </h1>
 
-	        <p class="max-w-xl font-sans-alt">
-	        	{{ text }}
-		    </p>
+	        {{ if text }}
+	        	<p class="mt-4 font-sans-alt">
+	        		{{ text }}
+		    	</p>
+		    {{ /if }}
 
 	    </div>
     </div>

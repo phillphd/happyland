@@ -1,0 +1,23 @@
+<section class="py-16 md:py-20">
+    <div class="container px-4">
+
+        <div class="wysiwyg max-w-5xl mx-auto text-charcoal">
+            {{ bard }}
+
+                {{ if type == "text" }}
+
+                    {{ text }}
+
+                {{ elseif type == "button" }}
+
+                    <a class="big-button inline-block px-4 sm:px-6 py-3 sm:py-4 mt-2 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ button_url }}">
+                        {{ button_text }}
+                    </a>
+
+                {{ /if }}
+
+            {{ /bard }}
+        </div>
+
+    </div>
+</section>

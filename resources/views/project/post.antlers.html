@@ -5,7 +5,7 @@
 >
 </section>
 
-<section class="py-24 md:py-28 lg:py-32">
+<section class="py-16 md:py-20 lg:py-24">
     <div class="container px-4">
     	
     	<h1 class="max-w-3xl mb-16 font-serif text-3xl lg:text-4xl text-charcoal">
@@ -70,7 +70,7 @@
             {{ /if }}
 
             {{ if type == "one_column_variable_height" }}
-            	<img class="w-full" 
+            	<img class="w-full mb-8" 
             		{{ assets:image }}
             			src="{{ url }}"
             		{{ /assets:image }}
@@ -79,13 +79,13 @@
 
             {{ if type == "two_column_fixed_height" }}
             	<div class="grid grid-cols-2 gap-8">
-                	<div class="w-full h-52 mb-8 bg-cover bg-center"
+                	<div class="w-full h-0 pb-4/5 mb-8 bg-cover bg-center"
                 		{{ assets:image_1 }}
                 			style="background-image: url('{{ url }}')"
                 		{{ /assets:image_1 }}
                 	></div>
 
-                	<div class="w-full h-52 mb-8 bg-cover bg-center"
+                	<div class="w-full h-0 pb-4/5 mb-8 bg-cover bg-center"
                 		{{ assets:image_2 }}
                 			style="background-image: url('{{ url }}')"
                 		{{ /assets:image_2 }}

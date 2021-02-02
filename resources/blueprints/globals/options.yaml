@@ -1,0 +1,84 @@
+sections:
+  announcement:
+    display: Announcement
+    fields:
+      -
+        handle: announcement_text
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Text
+      -
+        handle: announcement_url
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: URL
+  project_cta:
+    display: 'Project CTA'
+    fields:
+      -
+        import: c_t_a_with_icon
+  footer:
+    display: Footer
+    fields:
+      -
+        handle: social_links
+        field:
+          sets:
+            social_link:
+              display: 'Social Link'
+              fields:
+                -
+                  handle: icon
+                  field:
+                    options:
+                      dribbble: Dribbble
+                      envelope: Email
+                      facebook-f: Facebook
+                      instagram: Instagram
+                      linkedin-in: LinkedIn
+                    clearable: false
+                    multiple: false
+                    searchable: false
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    type: select
+                    width: 25
+                    listable: hidden
+                    display: Icon
+                -
+                  handle: url
+                  field:
+                    input_type: text
+                    type: text
+                    width: 75
+                    listable: hidden
+                    display: URL
+          type: replicator
+          listable: hidden
+          display: 'Social Links'
+      -
+        handle: copyright
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Copyright
+      -
+        handle: address
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Address
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: 'Phone Number'

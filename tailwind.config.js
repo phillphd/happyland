@@ -2,6 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false,
   theme: {
+  	screens: {
+  		'None': '100%',
+    	'sm': '640px',
+    	'md': '768px',
+    	'lg': '1024px',
+    	'xl': '1280px',
+    	'2xl': '1440px',
+    },
     colors: {
       	'white': '#FFFFFF',
       	'black': '#000000',
@@ -94,6 +102,7 @@ module.exports = {
 		padding: {
 			'16/9': '56.25%',
 			'4/3': '75%',
+			'4/5': '125%',
 		},
 
 		screens: {

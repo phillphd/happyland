@@ -65,6 +65,9 @@ fields:
       listable: hidden
       display: 'Pull Direction'
   -
+    import: button
+    prefix: pullimage_
+  -
     handle: pullimage_dark_mode
     field:
       type: toggle

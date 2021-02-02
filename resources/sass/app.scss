@@ -41,6 +41,36 @@ body {
 }
 
 .wysiwyg {
+	h2 {
+		@apply mb-4 font-serif text-2xl;
+		@screen sm {
+  			@apply text-3xl;
+		}
+		@screen lg {
+			@apply text-4xl;
+		}
+	}
+	h3 {
+		@apply mb-4 font-serif text-2xl;
+		@screen md {
+			@apply text-3xl;
+		}
+	}
+	h4 {
+		@apply mb-4 text-sm;
+		@screen md {
+  			@apply text-lg;
+		}
+		@screen lg {
+			@apply text-xl;
+		}
+	}
+	h5 {
+		@apply mb-4 text-sm;
+		@screen md {
+			@apply text-base;
+		}
+	}
 	p {
 		@apply mb-4 font-sans-alt text-sm;
 		@screen sm {
@@ -49,6 +79,9 @@ body {
 	}
 	a {
 		@apply text-primary;
+		&.big-button {
+			@apply mb-10 text-white hover:text-primary;
+		}
 	}
 
 	ol {
@@ -59,8 +92,8 @@ body {
 		@screen lg {
 			@apply pl-10 text-lg;
 		}
-		li {
-			@apply mb-2;
+		p {
+			@apply mb-0 tracking-tight;
 		}
 	}
 	ul {
@@ -71,10 +104,8 @@ body {
 		@screen lg {
 			@apply pl-10 mb-6 text-lg;
 		}
-		li {
-			@screen lg {
-				@apply mb-2;
-			}
+		p {
+			@apply mb-0 tracking-tight;
 		}
 	}
 

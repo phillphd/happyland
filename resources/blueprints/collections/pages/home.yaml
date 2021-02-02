@@ -61,6 +61,11 @@ sections:
               fields:
                 -
                   import: pull_image
+            text:
+              display: Text
+              fields:
+                -
+                  import: text
           type: replicator
           listable: hidden
           display: 'Flexible Content'

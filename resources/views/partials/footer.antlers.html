@@ -66,30 +66,24 @@
 
 		<div class="relative mt-8">
 			<div class="sm:absolute sm:top-0 sm:left-0 mb-8 sm:mb-0 text-center sm:text-left">
+				
 				<ul>
-		            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-		            	<a href="#!"><i class="far fa-envelope"></i></a>
-		            </li>
-		            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-		            	<a href="#!"><i class="fab fa-instagram"></i></a>
-		            </li>
-		            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-		            	<a href="#!"><i class="fab fa-dribbble"></i></a>
-		            </li>
-		            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-		            	<a href="#!"><i class="fab fa-facebook-f"></i></a>
-		            </li>
-		            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-		            	<a href="#!"><i class="fab fa-linkedin-in"></i></a>
-		            </li>
+					{{ options:social_links }}
+			            {{ if type == "social_link" }}
+				            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
+				            	<a href="{{ url }}"><i class="fa fab fa-{{ icon }}"></i></a>
+				            </li>
+			            {{ /if }}
+			        {{ /options:social_links }}
 		        </ul>
+
 			</div>
 			<div class="text-center sm:text-right">
 	    		<p class="mb-2 text-xs md:text-sm text-pink-light">
-	    			&copy; Happyland Creative, LLC. {{ now format="Y" }}. All rights reserved.
+	    			&copy; {{ options:copyright }}
 	    		</p>
 	    		<p class="text-xs md:text-sm text-pink-light">
-	    			PO Box 1512, Albany OR 97321  |  (541) 833-0291
+	    			{{ options:address }}  |  {{ options:phone_number }}
 	    		</p>
 	    	</div>
 		</div>
