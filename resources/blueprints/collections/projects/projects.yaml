@@ -18,16 +18,16 @@ sections:
         handle: services
         field:
           type: list
+          width: 50
           listable: hidden
           display: Services
-          width: 50
       -
         handle: descriptors
         field:
           type: list
+          width: 50
           listable: hidden
           display: Descriptors
-          width: 50
       -
         handle: images
         field:
@@ -109,11 +109,3 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-      -
-        handle: tags
-        field:
-          type: terms
-          taxonomies:
-            - tags
-          display: Tags
-          mode: select

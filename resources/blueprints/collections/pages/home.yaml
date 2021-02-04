@@ -8,6 +8,8 @@ sections:
         field:
           type: text
           required: true
+          validate:
+            - required
       -
         handle: hero
         field:
@@ -78,6 +80,8 @@ sections:
           type: slug
           required: true
           localizable: true
+          validate:
+            - required
       -
         handle: parent
         field:
@@ -87,3 +91,11 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden

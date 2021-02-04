@@ -132,3 +132,17 @@ body {
 		}
 	}
 }
+
+
+
+.instagram_profile,
+.instagram_igtv {
+	@apply hidden;
+}
+
+.instagram_gallery {
+	@apply flex flex-row w-full h-auto mb-6;
+	a:nth-child(n+6) {
+		@apply hidden;
+	}
+}

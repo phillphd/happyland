@@ -19731,6 +19731,22 @@ body.open-nav {
   }
 }
 
+.instagram_profile, .instagram_igtv {
+  display: none;
+}
+
+.instagram_gallery {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.instagram_gallery a:nth-child(n+6) {
+  display: none;
+}
+
 @media (min-width: 100%) {
   .None\:container {
     width: 100%;

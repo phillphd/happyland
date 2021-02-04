@@ -82,3 +82,17 @@ sections:
           type: text
           listable: hidden
           display: 'Phone Number'
+  portfolio:
+    display: Portfolio
+    fields:
+      -
+        handle: project_archive
+        field:
+          mode: default
+          collections:
+            - pages
+          display: 'Project Archive'
+          type: entries
+          icon: entries
+          listable: hidden
+          max_items: 1
