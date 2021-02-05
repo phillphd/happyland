@@ -1,11 +1,43 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MTJQ9F3');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Another awesome Statamic site">
-    <title>{{ title ?? site:name }}</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+    <title>{{ title ?? site:name }} | Happyland Creative</title>
+    <meta property="og:title" content="{{ title ?? site:name }} | Happyland Creative" />
+    <meta name="twitter:title" content="{{ title ?? site:name }} | Happyland Creative" />
+
+    <!-- Description -->
+    <meta name="description" content="Happyland Creative is a graphic design studio located in the Pacific Northwest, specializing in branding and print design." />
+    <meta property="og:description" content="Happyland Creative is a graphic design studio located in the Pacific Northwest, specializing in branding and print design." />
+    <meta name="twitter:description" content="Happyland Creative is a graphic design studio located in the Pacific Northwest, specializing in branding and print design." />
+
+    <meta property="og:type" content="article" />
+
+    <!-- Images -->
+    <meta property="og:image" content="https://happylandcreative.com/assets/brittany-3.jpg" />
+    <meta name="twitter:image" content="https://happylandcreative.com/assets/brittany-3.jpg" />
+
+    <!-- Non-Dynamic Metadata -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Happyland Creative" />
+    <meta name="twitter:site" content="@happylandcreative" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+
+
     <link rel="stylesheet" href="{{ mix src='css/app.css' }}" rel="preload" as="style" onload="this.rel='stylesheet'">
 
     <link rel="stylesheet" href="https://use.typekit.net/eid4jyy.css">
@@ -13,6 +45,10 @@
 </head>
 
 <body class="bg-tan-bg">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTJQ9F3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     {{ partial:nav }}
 
