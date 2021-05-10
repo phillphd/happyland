@@ -60,8 +60,8 @@
 				<ul>
 					{{ options:social_links }}
 			            {{ if type == "social_link" }}
-				            <li class="inline-block mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
-				            	<a href="{{ url }}"><i class="fa fab fa-{{ icon }}"></i></a>
+				            <li class="inline-block mx-2 sm:ml-0 sm:mr-3 text-sm sm:text-base md:text-lg text-tan hover:text-pink-light transition">
+				            	<a href="{{ url }}"><i class="fa fab fa-{{ icon | lower }}"></i></a>
 				            </li>
 			            {{ /if }}
 			        {{ /options:social_links }}

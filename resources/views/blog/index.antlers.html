@@ -1,0 +1,128 @@
+{{ partial:internal_hero }}
+
+{{ collection:blog limit="1" }}
+
+<section class="pb-20">
+    <div class="container px-4">
+
+        <div class="relative sm:grid sm:grid-cols-7 sm:gap-8 lg:gap-16">
+
+            <div class="sm:absolute top-0 right-0 h-0 sm:h-full w-full sm:w-2/3 pb-4/3 sm:pb-0 bg-cover bg-center bg-gray"
+                {{ assets:featured_image }}
+                    style="background-image: url('{{ url }}')"
+                {{ /assets:featured_image }}
+            ></div>
+
+            <div class="relative col-span-5 md:col-span-4 xl:col-span-3 max-w-lg px-8 sm:px-12 py-8 sm:py-16 sm:my-12 bg-red-bg">
+
+                <h6 class="inline-block px-4 mb-8 text-xs sm:text-sm lg:text-base text-white uppercase bg-pink-bg align-right">
+                    Featured Post
+                </h6>
+
+                <h1 class="mb-4 font-serif text-2xl sm:text-3xl lg:text-4xl text-tan">
+                    {{ title }}
+                </h1>
+
+                {{ if excerpt }}
+                    <p class="mb-4 font-sans-alt text-sm sm:text-base text-tan">
+                        {{ excerpt }}
+                    </p>
+                {{ /if }}
+
+                <a class="relative inline-block px-4 py-2 mt-4 text-sm sm:text-base text-tan hover:text-red-bg hover:bg-tan border border-tan rounded-sm transition" href="{{ url }}">
+                    <span class="relative z-10 pointer-events-none">
+                        Read More
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{{ /collection:blog }}
+
+<section class="pb-20">
+    <div class="container px-4">
+
+        <div class="grid grid-cols-3 gap-4 sm:gap-8 lg:gap-16">
+                
+            {{ collection:blog limit="3" offset="1" }}
+                <div class="post-card relative">
+                    
+                    <a href="{{ url }}">
+                        <div class="relative w-full h-0 pb-4/3 mb-4 bg-charcoal bg-opacity-30 hover:bg-opacity-70 transition bg-gray overflow-hidden">
+                            <div class="post-card__image absolute inset-0 bg-cover bg-center bg-gray transform hover:scale-110 transition duration-500"
+                            {{ assets:featured_image }}
+                                style="background-image: url('{{ url }}')"
+                            {{ /assets:featured_image }}>
+                        </div>
+                        </div>
+                        <h3 class="font-serif sm:text-xl md:text-2xl lg:text-3xl sm:tracking-normal leading-none text-charcoal">
+                            {{ title }}
+                        </h3>
+                    </a>
+
+                </div>
+            {{ /collection:blog }}
+
+        </div>
+
+    </div>
+</section>
+
+{{ partial:subscribe }}
+
+<section class="py-20">
+    <div class="container px-4">
+
+        <div class="grid grid-cols-3 gap-4 sm:gap-8 lg:gap-16">
+
+            {{ collection:blog offset="4" }}
+                <div class="post-card relative">
+                    
+                    <a href="{{ url }}">
+                        <div class="relative w-full h-0 pb-4/3 mb-4 bg-charcoal bg-opacity-30 hover:bg-opacity-70 transition bg-gray overflow-hidden">
+                            <div class="post-card__image absolute inset-0 bg-cover bg-center bg-gray transform hover:scale-110 transition duration-500"
+                            {{ assets:featured_image }}
+                                style="background-image: url('{{ url }}')"
+                            {{ /assets:featured_image }}>
+                        </div>
+                        </div>
+                        <h3 class="font-serif sm:text-xl md:text-2xl lg:text-3xl sm:tracking-normal leading-none text-charcoal">
+                            {{ title }}
+                        </h3>
+                    </a>
+
+                </div>
+            {{ /collection:blog }}
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="py-16 md:py-24 text-center bg-pink-light-bg">
+    <div class="container px-4">
+        <div class="relative w-40 sm:w-52 lg:w-60 mx-auto mb-10">
+            {{ assets:options:ctaicon_icon }}
+            <img src="{{ url }}" />
+            {{ /assets:options:ctaicon_icon }}
+        </div>
+
+        <h6 class="max-w-5xl mx-auto mb-4 text-xs sm:text-sm lg:text-base text-charcoal">
+            {{ options:ctaicon_superheader }}
+        </h6>
+
+        <h2 class="max-w-5xl mx-auto mb-12 font-serif text-2xl sm:text-3xl lg:text-4xl text-primary">
+            {{ options:ctaicon_header }}
+        </h2>
+
+        <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 mb-8 md:mb-12 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ options:ctaicon_button_url }}">
+            {{ options:ctaicon_button_text }}
+        </a>
+    </div>
+</section>

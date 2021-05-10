@@ -1,0 +1,63 @@
+title: Posts
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: superheader
+        field:
+          input_type: text
+          antlers: false
+          display: Superheader
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: header
+        field:
+          input_type: text
+          antlers: false
+          display: Header
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: text
+        field:
+          antlers: false
+          display: Text
+          type: textarea
+          icon: textarea
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  subscribe:
+    display: Subscribe
+    fields:
+      -
+        import: subscribe

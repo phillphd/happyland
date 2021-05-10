@@ -11,11 +11,15 @@ module.exports = {
     	'2xl': '1440px',
     },
     colors: {
+    	'transparent': 'transparent',
+
       	'white': '#FFFFFF',
       	'black': '#000000',
 
       	'gray': '#B1B1B1',
       	'gray-light': '#C0C0C0',
+
+      	'blue-light': '#8FC8D1',
 
       	'charcoal': '#353A3D',
 		'primary': '#E76035',
@@ -102,6 +106,7 @@ module.exports = {
 		padding: {
 			'16/9': '56.25%',
 			'4/3': '75%',
+			'4/4': '100%',
 			'4/5': '125%',
 		},
 

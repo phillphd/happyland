@@ -10,6 +10,24 @@ fields:
       listable: hidden
       display: 'Background Image'
   -
+    handle: logoblock_text_alignment
+    field:
+      options:
+        left: 'Left Align'
+        center: 'Center Align'
+        right: 'Right Align'
+      multiple: false
+      max_items: 1
+      clearable: false
+      searchable: false
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Text Alignment'
+      type: select
+      icon: select
+      listable: hidden
+  -
     handle: logoblock_header
     field:
       input_type: text

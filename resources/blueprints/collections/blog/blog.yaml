@@ -8,6 +8,8 @@ sections:
         field:
           type: text
           required: true
+          validate:
+            - required
       -
         handle: excerpt
         field:
@@ -50,6 +52,13 @@ sections:
           listable: hidden
           display: Bard
           container: assets
+          always_show_set_button: false
+          sets:
+            button:
+              display: Button
+              fields:
+                -
+                  import: button
   sidebar:
     display: Sidebar
     fields:
@@ -59,11 +68,15 @@ sections:
           type: slug
           required: true
           localizable: true
+          validate:
+            - required
       -
         handle: date
         field:
           type: date
           required: true
+          validate:
+            - required
       -
         handle: categories
         field:

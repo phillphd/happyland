@@ -133,6 +133,12 @@ body {
 	}
 }
 
+.post-card:hover {
+	.post-card__image {
+		@apply scale-110;
+	}
+}
+
 
 
 .instagram_profile,

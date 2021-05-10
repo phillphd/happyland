@@ -1,0 +1,78 @@
+<section class="h-0 lg:h-screen-60 pb-16/9 lg:pb-0 bg-cover bg-center bg-gray"
+	{{ assets:featured_image }}
+		style="background-image: url('{{ url }}')"
+	{{ /assets:featured_image }}
+>
+</section>
+
+<section class="relative mb-20 sm:mb-24 md:mb-28 lg:mb-32">
+    <div class="relative container px-4">
+    	
+    	<div class="absolute top-0 left-0 w-full transform -translate-y-1/2">
+    		<div class="max-w-4xl py-8 mx-auto text-center bg-tan-bg">
+    			<h1 class="mb-4 sm:mb-6 font-serif text-3xl lg:text-4xl text-charcoal">
+	        		{{ title }}
+	    		</h1>
+	    		<p class="text-sm md:text-base font-sans-alt">
+	    			Brittany Wong, Owner & Creative Director  <span class="hidden sm:inline">|</span>  <span class="block sm:inline">{{ date }}</span>
+	    		</p>
+	    	</div>
+	    </div>
+
+    </div>
+</section>
+
+<section class="pb-32">
+    <div class="container px-4">
+            
+        <div class="wysiwyg max-w-5xl mx-auto mb-12 sm:mb-20 text-charcoal">
+            {{ bard }}
+
+                {{ if type == "text" }}
+
+                    {{ text }}
+
+                {{ elseif type == "button" }}
+
+                    <a class="big-button inline-block px-4 sm:px-6 py-3 sm:py-4 mt-2 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ button_url }}">
+                        {{ button_text }}
+                    </a>
+
+                {{ /if }}
+
+            {{ /bard }}
+        </div>
+
+        <div class="text-center">
+            <a class="relative pr-4 text-sm sm:text-base text-primary hover:pr-6" href="/posts">
+                View More Posts
+                <span class="absolute top-1/2 right-0 w-2 h-2 border-r border-b border-primary transform -rotate-45 -translate-y-1/2"></span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="py-16 md:py-24 text-center bg-pink-light-bg">
+    <div class="container px-4">
+        <div class="relative w-40 sm:w-52 lg:w-60 mx-auto mb-10">
+            {{ assets:options:ctaicon_icon }}
+            <img src="{{ url }}" />
+            {{ /assets:options:ctaicon_icon }}
+        </div>
+
+        <h6 class="max-w-5xl mx-auto mb-4 text-xs sm:text-sm lg:text-base text-charcoal">
+            {{ options:ctaicon_superheader }}
+        </h6>
+
+        <h2 class="max-w-5xl mx-auto mb-12 font-serif text-2xl sm:text-3xl lg:text-4xl text-primary">
+            {{ options:ctaicon_header }}
+        </h2>
+
+        <a class="inline-block px-4 sm:px-6 py-3 sm:py-4 mb-8 md:mb-12 text-xs sm:text-sm lg:text-base text-white hover:text-red-bg bg-red-bg hover:bg-white rounded transition" href="{{ options:ctaicon_button_url }}">
+            {{ options:ctaicon_button_text }}
+        </a>
+    </div>
+</section>
+

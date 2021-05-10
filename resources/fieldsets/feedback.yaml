@@ -14,31 +14,3 @@ fields:
       type: text
       listable: hidden
       display: Text
-  -
-    handle: feedback
-    field:
-      sets:
-        feedback:
-          display: Feedback
-          fields:
-            -
-              handle: quote
-              field:
-                input_type: text
-                type: text
-                localizable: false
-                width: 75
-                listable: hidden
-                display: Quote
-            -
-              handle: name
-              field:
-                input_type: text
-                type: text
-                localizable: false
-                width: 25
-                listable: hidden
-                display: Name
-      type: replicator
-      listable: hidden
-      display: Feedback

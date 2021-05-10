@@ -1,5 +1,5 @@
 <section class="py-16 md:py-24 px-4 overflow-hidden bg-cover bg-center" style="background-image: url('/assets/gradient.jpg');">
-    <div class="text-center">
+    <div class="mb-8 text-center">
 
     	<div class="relative w-8 md:w-12 mx-auto mb-4">
     		<img src="/assets/quote-1.png" />
@@ -9,30 +9,28 @@
     	</h2>
 
         {{ if feedback_text }}
-            <p class="mb-4 font-sans-alt text-sm sm:text-base text-charcoal text-center">
+            <p class="max-w-3xl mx-auto mb-4 font-sans-alt text-sm sm:text-base text-charcoal text-center">
                 {{ feedback_text }}
             </p>
         {{ /if }}
 
     </div>
-    <div class="flex flex-row flex-nowrap justify-center items-end mt-4">
+    <div class="flex flex-row flex-wrap justify-center items-end mt-4">
 
-    	{{ feedback }}
-            {{ if type == "feedback" }}
-                <div class="relative w-72 py-6 px-5 my-8 mx-3 md:mx-6 text-center bg-tan flex-grow-0 flex-shrink-0">
-                    <img class="absolute top-0 left-1/2 w-8 transform -translate-x-1/2 -translate-y-1/2" src="/assets/quote-2.svg" />
-                    
-                    <div class="mb-6 font-sans-alt text-sm text-charcoal">
-                        {{ quote }}
-                    </div>
-                    <div class="text-xs text-charcoal uppercase">
-                        {{ name }}
-                    </div>
-
-                    <div class="absolute bottom-0 transform translate-y-full" style="right: 30px; border-top: 32px solid #EEE4D0; border-left: 32px solid transparent;"></div>
+        {{ collection from="testimonials" limit="10" }}
+            <div class="relative w-72 py-6 px-5 my-8 mx-3 md:mx-6 text-center bg-tan flex-grow-0 flex-shrink-0">
+                <img class="absolute top-0 left-1/2 w-8 transform -translate-x-1/2 -translate-y-1/2" src="/assets/quote-2.svg" />
+                
+                <div class="mb-6 font-sans-alt text-sm text-charcoal">
+                    {{ quote }}
                 </div>
-            {{ /if }}
-        {{ /feedback }}
+                <div class="text-xs text-charcoal uppercase">
+                    {{ title }}
+                </div>
+
+                <div class="absolute bottom-0 transform translate-y-full" style="right: 30px; border-top: 32px solid #EEE4D0; border-left: 32px solid transparent;"></div>
+            </div>
+        {{ /collection }}
 
     </div>
 </section>

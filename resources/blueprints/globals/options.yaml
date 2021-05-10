@@ -96,3 +96,17 @@ sections:
           icon: entries
           listable: hidden
           max_items: 1
+  blog:
+    display: Blog
+    fields:
+      -
+        handle: blog_archive
+        field:
+          max_items: 1
+          mode: default
+          collections:
+            - pages
+          display: 'Blog Archive'
+          type: entries
+          icon: entries
+          listable: hidden
